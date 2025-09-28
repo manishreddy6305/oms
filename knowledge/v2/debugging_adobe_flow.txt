@@ -1,0 +1,203 @@
+# Adobe Onboarding Provisioning Debug Guide
+
+PURPOSE
+Use this file to debug Adobe-origin onboarding applications that have reached (or are stuck in) DATA_CAPTURE or PROVISIONING stages. Focus on identifying the failing step, gathering exact evidence, and deciding whether to retry, fix data, or escalate.
+
+SCOPE
+Covers only: turbo-sourcing + turbo-provisioning driven Adobe applications (spool_id = 59dc2abf-7dcc-45d9-81de-29f8b17e5942).
+Exclude: Payzapp flow (see separate file), post-dispatch card lifecycle issues, rewards, repayments.
+
+--------------------------------------------------
+1. DOMAIN OVERVIEW
+--------------------------------------------------
+STAGES (Cosmos Application)
+1. DATA_CAPTURE
+   - External system invokes: POST /spools/{spoolId}/applications (turbo-sourcing)
+   - Populates application sections; on completion triggers transition.
+2. PROVISIONING
+   - Kafka (or internal event) triggers turbo-provisioning:
+     POST /spools/{spoolId}/applications/{applicationId}/provisions
+   - Executes a sequential workflow of provisioning steps.
+
+PRIMARY SERVICES
+- turbo-sourcing: owns application creation / DATA_CAPTURE
+- turbo-provisioning: orchestrates provisioning workflow
+- mars: account holder create/update
+- aether: bundle(/issueBundle API) + card issuanc(/issuePrimaryCard API) + bundle/card status queries
+- turbo-account-management-service: dispatch finalization (/obCompletion API)
+
+--------------------------------------------------
+2. PROVISIONING WORKFLOW STEPS (Ordered)
+--------------------------------------------------
+AUTH_PROFILE_CREATION
+DEFAULT_CONFIGURATION
+VALIDATION
+ACCOUNT_HOLDER_SETUP
+BUNDLE_ISSUANCE
+CARD_ISSUANCE
+CARD_STATUS_VALIDATION
+THEME_SELECTION
+DISPATCH
+
+Each step usually logs:
+- Entry log (parsedMessage.title = HTTP path or internal flow marker)
+- Success OR error with stackTrace / message
+- Downstream HTTP calls (HttpLogger entries)
+
+--------------------------------------------------
+3. COMMON FAILURE POINTS (SYMPTOM → ACTION)
+--------------------------------------------------
+AUTH_PROFILE_CREATION
+- 4xx from auth service → bad input (check application sections)
+- 5xx → transient → retry after verifying no partial duplicate created
+
+DEFAULT_CONFIGURATION
+- Missing network defaults → config gap → escalate (include applicationId)
+- Missing theme defaults → config gap → escalate (include applicationId)
+
+VALIDATION
+- Duplicate credit account detected → business failure (expected) → confirm state persisted as FAILED (not STUCK)
+
+ACCOUNT_HOLDER_SETUP
+- mars 409 conflict → stale identity; fetch existing accountHolderId and confirm mapping
+
+BUNDLE_ISSUANCE
+- aether 4xx → invalid product config
+- aether 5xx / timeout → transient
+
+CARD_ISSUANCE
+- No network available in cosmos "cardNetwork" section
+- RUPAY/VISA partial success → ensure rollback policy; 
+
+CARD_STATUS_VALIDATION
+- Card status not ACTIVE after expected polling → capture bundleDetails response JSON; potential async lag
+
+THEME_SELECTION
+- No available themes in cosmos "theme" section → configuration drift; escalate with tenant + product identifiers
+
+DISPATCH
+- /obCompletion 4xx → input contract mismatch (payload fields)
+
+--------------------------------------------------
+4. DATA YOU MUST COLLECT FIRST
+--------------------------------------------------
+- spoolId (should match Adobe spool)
+- applicationId
+- current stage + status (DATA_CAPTURE / PROVISIONING + INITIATED / FAILED / COMPLETED)
+- failing step (if stored) or last successful step
+- customer identifiers ( mobile if present)
+- auth_profile_id (from baggage#auth_profile_id)
+- trace_id (core for log correlation)
+- timestamps (approx window)
+
+--------------------------------------------------
+5. LOG RETRIEVAL STRATEGY
+--------------------------------------------------
+GOAL: Get minimal precise slice (avoid huge wildcard scans).
+
+
+Search order:
+1. Start with applicationId in parsedMessage.attributes or message or parsedMessage.title
+2. From one hit, extract mdc.trace_id.
+3. Re-query strictly on mdc.trace_id.
+4. If trace splits across services, ensure clusterName filter = turboonboarding (or relevant cluster) ans service=turbo-sourcing or turbo-provisioning
+
+Elastic / Kibana sample (pseudocode Lucene/KQL style):
+parsedMessage.attributes.applicationId:"<applicationId>"
+app:turbo-provisioning AND trace_id:"<traceId>"
+trace_id:"<traceId>" AND (level:ERROR OR level:WARN)
+
+Regex tip: Use anchored fragments for paths:
+parsedMessage.title: /spools/.*/applications/.*/provisions
+User as much as regex separated by OR to avoid querying with wrong field.
+Strictly use windcards on application_id, bundle_id, issuance_id, and other relavant values.
+
+--------------------------------------------------
+6. INTERPRETING KEY LOG FIELDS
+--------------------------------------------------
+timestamp: ISO instant
+app: emitting service (e.g. turbo-provisioning)
+clusterName: Kubernetes cluster (e.g. turboonboarding)
+pod / host: pod id (useful for container logs deeper dive)
+level: INFO / WARN / ERROR
+trace_id: Correlates the entire provisioning flow
+span_id: Child operation identifier (distributed tracing)
+baggage#flow_name: Workflow name (confirm matches provisioning pipeline)
+baggage#upstream: Caller service
+baggage#auth_profile_id: Auth profile created/used
+parsedMessage.title: Usually HTTP path or logical operation name
+parsedMessage.attributes.stackTrace: Exception stack trace (if present)
+parsedMessage.attributes.message: Error detail / contextual message
+stacktraces, exceptions etc.
+
+--------------------------------------------------
+7. STEP IS STUCK – DECISION TREE
+--------------------------------------------------
+1. DATA_CAPTURE in INITIATED : Check if validation issues in cosmos stage table
+
+2. PROVISONING in INITIATED: Check details column from comsos stage table
+    The details object will have one object for each of the provisioning stage workflow involved
+
+    User this json strictly as Example
+    "details": {
+        "bundle": {
+            "status": "COMPLETED",
+            "accounts": [
+                {
+                    "id": "98a88efa-00a4-4e69-bce8-428dfb403fbf"
+                }
+            ],
+            "bundleId": "f339f128-2260-4e99-a1be-5519be2c4006",
+            "issuanceId": "c6aad082-b38e-4809-8ca9-af0c2c461abf"
+        },
+        "authProfile": {
+            "status": "COMPLETED",
+            "authProfileId": "O6urV_920h4uGVHOwEVlCw=="
+        },
+        "dedupeResult": {
+            "reason": "",
+            "result": [],
+            "status": "SUCCESS"
+        },
+        "accountHolder": {
+            "id": "c980edcf-7a21-4dcc-a844-bd46747ac4a6",
+            "status": "COMPLETED",
+            "authProfileId": "O6urV_920h4uGVHOwEVlCw=="
+        },
+        "existingAccounts": [] // non empty array means there was an existing account. This may lead to provisioning failed stage
+    },
+
+3. PROVISIONING in FAILED : 
+    Check if dedupe result is not SUCCESS
+    Check if existingAccounts array is non empty.
+--------------------------------------------------
+8. QUICK EXAMPLES
+--------------------------------------------------
+Find provisioning invocation:
+parsedMessage.title:"/spools/59dc2abf-7dcc-45d9-81de-29f8b17e5942/applications/<applicationId>/provisions"
+
+Find aether bundle issuance failure:
+parsedMessage.title: *issueBundle* AND trace_id:"<trace>"
+
+Find Mars conflicts:
+parsedMessage.title: *mars* AND trace_id:"<trace>"
+
+--------------------------------------------------
+9. WHEN TO STOP
+--------------------------------------------------
+Stop and escalate if:
+- Missing trace_id (no logs correlating)
+- Config gaps (no themes/network config)
+
+--------------------------------------------------
+10. APPENDIX – STEP SUMMARY (CONDENSED)
+--------------------------------------------------
+AUTH_PROFILE_CREATION: Create auth profile (id → baggage)
+DEFAULT_CONFIGURATION: Network + theme defaults
+VALIDATION: Dedupe / existing credit check
+ACCOUNT_HOLDER_SETUP: mars identity sync
+BUNDLE_ISSUANCE: aether /issueBundle
+CARD_ISSUANCE: aether /issuePrimaryCard
+CARD_STATUS_VALIDATION: aether bundleDetails poll
+THEME_SELECTION: Choose physical theme
+DISPATCH: /obCompletion finalize

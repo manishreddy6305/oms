@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Save Visible Logs</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main>
+    <h1>Log Saver</h1>
+    <label style="display:block;margin-bottom:4px;font-size:12px;">Index name:
+      <input id="indexInput" type="text" value="logs-service" style="width:100%;box-sizing:border-box;" placeholder="e.g. logs-service" />
+    </label>
+    <button id="captureBtn">Capture & Save</button>
+    <p id="status"></p>
+    <details>
+      <summary>Last payload preview</summary>
+      <pre id="preview"></pre>
+    </details>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

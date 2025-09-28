@@ -1,0 +1,11 @@
+{
+    "action": "MCP",
+    "mcpDetails": {
+        "tool_name": "",
+        "params": {
+            "param1": "",
+            "param2": ""
+        }
+    },
+    "explanation": ""
+}

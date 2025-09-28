@@ -1,0 +1,387 @@
+{"timestamp":"2025-09-09T02:30:09.531Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-09T02:30:09.532Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-09T02:30:09.533Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+DEBUG - mcp-atlassian - Logging level set to: DEBUG
+DEBUG - mcp-atlassian - Logging stream set to: stderr
+DEBUG - mcp-atlassian - Attempting to load environment from default .env file if it exists
+DEBUG - mcp-atlassian - Final transport determined: stdio
+DEBUG - mcp-atlassian - Final port for HTTP transports: 8000
+DEBUG - mcp-atlassian - Final host for HTTP transports: 0.0.0.0
+DEBUG - mcp-atlassian - Final path for Streamable HTTP: FastMCP default
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Confluence MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Jira MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Atlassian MCP'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+DEBUG - mcp-atlassian.utils.lifecycle - SIGPIPE handler registered
+DEBUG - mcp-atlassian - STDIO transport detected, setting up stdin monitoring
+DEBUG - mcp-atlassian - Starting asyncio event loop...
+DEBUG - asyncio - Using selector: EpollSelector
+[09/09/25 02:30:10] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+DEBUG - mcp_atlassian.utils.tools - ENABLED_TOOLS environment variable not set or empty.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+DEBUG - mcp.server.lowlevel.server - Received message: root=InitializedNotification(method='notifications/initialized', params=NotificationParams(meta=None), jsonrpc='2.0')
+{"timestamp":"2025-09-09T02:30:12.335Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-09T02:30:12.335Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-09T02:30:12.336Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+DEBUG - mcp-atlassian - Logging level set to: DEBUG
+DEBUG - mcp-atlassian - Logging stream set to: stderr
+DEBUG - mcp-atlassian - Attempting to load environment from default .env file if it exists
+DEBUG - mcp-atlassian - Final transport determined: stdio
+DEBUG - mcp-atlassian - Final port for HTTP transports: 8000
+DEBUG - mcp-atlassian - Final host for HTTP transports: 0.0.0.0
+DEBUG - mcp-atlassian - Final path for Streamable HTTP: FastMCP default
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Confluence MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Jira MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Atlassian MCP'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+DEBUG - mcp-atlassian.utils.lifecycle - SIGPIPE handler registered
+DEBUG - mcp-atlassian - STDIO transport detected, setting up stdin monitoring
+DEBUG - mcp-atlassian - Starting asyncio event loop...
+DEBUG - asyncio - Using selector: EpollSelector
+[09/09/25 02:30:13] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+DEBUG - mcp_atlassian.utils.tools - ENABLED_TOOLS environment variable not set or empty.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+DEBUG - mcp.server.lowlevel.server - Received message: root=InitializedNotification(method='notifications/initialized', params=NotificationParams(meta=None), jsonrpc='2.0')
+INFO:     Will watch for changes in these directories: ['/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [48940] using StatReload
+{"timestamp":"2025-09-09T02:30:16.098Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-09T02:30:16.099Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-09T02:30:16.100Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+DEBUG - mcp-atlassian - Logging level set to: DEBUG
+DEBUG - mcp-atlassian - Logging stream set to: stderr
+DEBUG - mcp-atlassian - Attempting to load environment from default .env file if it exists
+DEBUG - mcp-atlassian - Final transport determined: stdio
+DEBUG - mcp-atlassian - Final port for HTTP transports: 8000
+DEBUG - mcp-atlassian - Final host for HTTP transports: 0.0.0.0
+DEBUG - mcp-atlassian - Final path for Streamable HTTP: FastMCP default
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Confluence MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Jira MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Atlassian MCP'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+DEBUG - mcp-atlassian.utils.lifecycle - SIGPIPE handler registered
+DEBUG - mcp-atlassian - STDIO transport detected, setting up stdin monitoring
+DEBUG - mcp-atlassian - Starting asyncio event loop...
+DEBUG - asyncio - Using selector: EpollSelector
+[09/09/25 02:30:17] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+DEBUG - mcp_atlassian.utils.tools - ENABLED_TOOLS environment variable not set or empty.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+DEBUG - mcp.server.lowlevel.server - Received message: root=InitializedNotification(method='notifications/initialized', params=NotificationParams(meta=None), jsonrpc='2.0')
+{"timestamp":"2025-09-09T02:30:19.073Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-09T02:30:19.074Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-09T02:30:19.074Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+DEBUG - mcp-atlassian - Logging level set to: DEBUG
+DEBUG - mcp-atlassian - Logging stream set to: stderr
+DEBUG - mcp-atlassian - Attempting to load environment from default .env file if it exists
+DEBUG - mcp-atlassian - Final transport determined: stdio
+DEBUG - mcp-atlassian - Final port for HTTP transports: 8000
+DEBUG - mcp-atlassian - Final host for HTTP transports: 0.0.0.0
+DEBUG - mcp-atlassian - Final path for Streamable HTTP: FastMCP default
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Confluence MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Jira MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Atlassian MCP'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+DEBUG - mcp-atlassian.utils.lifecycle - SIGPIPE handler registered
+DEBUG - mcp-atlassian - STDIO transport detected, setting up stdin monitoring
+DEBUG - mcp-atlassian - Starting asyncio event loop...
+DEBUG - asyncio - Using selector: EpollSelector
+[09/09/25 02:30:20] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+DEBUG - mcp_atlassian.utils.tools - ENABLED_TOOLS environment variable not set or empty.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+DEBUG - mcp.server.lowlevel.server - Received message: root=InitializedNotification(method='notifications/initialized', params=NotificationParams(meta=None), jsonrpc='2.0')
+INFO:     Started server process [48961]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:63450 - "POST /invoke HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'bedrock.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [48961]
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutting down...
+DEBUG - mcp-atlassian.server.main - Cleaning up Jira resources...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutdown complete.
+INFO - mcp-atlassian.utils.lifecycle - Server stopped, flushing output streams...
+DEBUG - mcp-atlassian.utils.lifecycle - Output streams flushed, exiting gracefully
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutting down...
+DEBUG - mcp-atlassian.server.main - Cleaning up Jira resources...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutdown complete.
+INFO - mcp-atlassian.utils.lifecycle - Server stopped, flushing output streams...
+DEBUG - mcp-atlassian.utils.lifecycle - Output streams flushed, exiting gracefully
+WARNING:  StatReload detected changes in 'bedrock.py'. Reloading...
+{"timestamp":"2025-09-09T02:33:31.821Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-09T02:33:31.822Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-09T02:33:31.823Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+DEBUG - mcp-atlassian - Logging level set to: DEBUG
+DEBUG - mcp-atlassian - Logging stream set to: stderr
+DEBUG - mcp-atlassian - Attempting to load environment from default .env file if it exists
+DEBUG - mcp-atlassian - Final transport determined: stdio
+DEBUG - mcp-atlassian - Final port for HTTP transports: 8000
+DEBUG - mcp-atlassian - Final host for HTTP transports: 0.0.0.0
+DEBUG - mcp-atlassian - Final path for Streamable HTTP: FastMCP default
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Confluence MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Jira MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Atlassian MCP'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+DEBUG - mcp-atlassian.utils.lifecycle - SIGPIPE handler registered
+DEBUG - mcp-atlassian - STDIO transport detected, setting up stdin monitoring
+DEBUG - mcp-atlassian - Starting asyncio event loop...
+DEBUG - asyncio - Using selector: EpollSelector
+[09/09/25 02:33:33] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+DEBUG - mcp_atlassian.utils.tools - ENABLED_TOOLS environment variable not set or empty.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+DEBUG - mcp.server.lowlevel.server - Received message: root=InitializedNotification(method='notifications/initialized', params=NotificationParams(meta=None), jsonrpc='2.0')
+{"timestamp":"2025-09-09T02:33:34.700Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-09T02:33:34.701Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-09T02:33:34.702Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+DEBUG - mcp-atlassian - Logging level set to: DEBUG
+DEBUG - mcp-atlassian - Logging stream set to: stderr
+DEBUG - mcp-atlassian - Attempting to load environment from default .env file if it exists
+DEBUG - mcp-atlassian - Final transport determined: stdio
+DEBUG - mcp-atlassian - Final port for HTTP transports: 8000
+DEBUG - mcp-atlassian - Final host for HTTP transports: 0.0.0.0
+DEBUG - mcp-atlassian - Final path for Streamable HTTP: FastMCP default
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Confluence MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Jira MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Atlassian MCP'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+DEBUG - mcp-atlassian.utils.lifecycle - SIGPIPE handler registered
+DEBUG - mcp-atlassian - STDIO transport detected, setting up stdin monitoring
+DEBUG - mcp-atlassian - Starting asyncio event loop...
+DEBUG - asyncio - Using selector: EpollSelector
+[09/09/25 02:33:35] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+DEBUG - mcp_atlassian.utils.tools - ENABLED_TOOLS environment variable not set or empty.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+DEBUG - mcp.server.lowlevel.server - Received message: root=InitializedNotification(method='notifications/initialized', params=NotificationParams(meta=None), jsonrpc='2.0')
+INFO:     Started server process [49117]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+
+
+ModelReturned: f{"ResponseMetadata": {"RequestId": "cab0a428-6647-411a-8789-a3f666268564", "HTTPStatusCode": 200, "HTTPHeaders": {"date": "Tue, 09 Sep 2025 02:34:04 GMT", "content-type": "application/json", "content-length": "1094", "connection": "keep-alive", "x-amzn-requestid": "cab0a428-6647-411a-8789-a3f666268564"}, "RetryAttempts": 0}, "output": {"message": {"role": "assistant", "content": [{"text": "<thinking>The ticket resolution process is complete after:\n1. Retrieving ticket details showing the need to find application ID for mobile 9915120241\n2. Querying hdfc_turbo_onboarding.user_application which returned consistent application_id\n3. Adding a Jira comment with the verified application ID\n\nNo further database checks needed since:\n- Primary database provided definitive answer\n- Multiple records confirmed the same application ID\n- Cosmosahp check wasn't required as core issue was resolved\n\nFinal step: Confirm resolution to user with next steps for ticket closure.</thinking> Application ID **a915a9c3-3778-47fb-8f37-790c2c2032c0** has been successfully located for mobile number 9915120241 in the HDFC Turbo Onboarding database. I've added this information to the Jira ticket. Please verify if this resolves your issue, and we can close the ticket if no further assistance is needed."}]}}, "stopReason": "end_turn", "usage": {"inputTokens": 3520, "outputTokens": 229, "totalTokens": 3749}, "metrics": {"latencyMs": 8337}}
+INFO:     127.0.0.1:63605 - "POST /invoke HTTP/1.1" 200 OK
+{"timestamp":"2025-09-09T08:58:33.917Z","level":"info","message":"Shutting down server..."}
+INFO: Shutting down server...
+INFO:     Shutting down
+{"timestamp":"2025-09-09T08:58:33.923Z","level":"info","message":"Shutting down server..."}
+INFO: Shutting down server...
+{"timestamp":"2025-09-09T08:58:33.934Z","level":"info","message":"Shutting down server..."}
+INFO: Shutting down server...
+{"timestamp":"2025-09-09T08:58:33.942Z","level":"info","message":"Shutting down server..."}
+INFO: Shutting down server...
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [49117]
+INFO:     Stopping reloader process [48940]
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutting down...
+DEBUG - mcp-atlassian.server.main - Cleaning up Jira resources...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutdown complete.
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutting down...
+DEBUG - mcp-atlassian.server.main - Cleaning up Jira resources...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutdown complete.
+INFO - mcp-atlassian.utils.lifecycle - Server stopped, flushing output streams...
+DEBUG - mcp-atlassian.utils.lifecycle - Output streams flushed, exiting gracefully
+INFO - mcp-atlassian.utils.lifecycle - Server stopped, flushing output streams...
+DEBUG - mcp-atlassian.utils.lifecycle - Output streams flushed, exiting gracefully
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutting down...
+DEBUG - mcp-atlassian.server.main - Cleaning up Jira resources...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutdown complete.
+INFO - mcp-atlassian.utils.lifecycle - Server stopped, flushing output streams...
+DEBUG - mcp-atlassian.utils.lifecycle - Output streams flushed, exiting gracefully
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutting down...
+DEBUG - mcp-atlassian.server.main - Cleaning up Jira resources...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutdown complete.
+INFO - mcp-atlassian.utils.lifecycle - Server stopped, flushing output streams...
+DEBUG - mcp-atlassian.utils.lifecycle - Output streams flushed, exiting gracefully

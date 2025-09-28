@@ -1,0 +1,40 @@
+[
+        {
+      "toolSpec": {
+        "name": "jira_search",
+        "description": "Search Jira issues using JQL (Jira Query Language).",
+        "inputSchema": {
+          "json": {
+            "type": "object",
+            "properties": {
+              "jql": {
+                "type": "string",
+                "description": "JQL query string (e.g., \"status = 'In Progress' AND project = PROJ\")"
+              },
+              "expand": {
+                "type": "string",
+                "description": "(Optional) Fields to expand, e.g., 'renderedFields,transitions,changelog'"
+              },
+              "fields": {
+                "type": "string",
+                "description": "(Optional) Comma-separated fields to return, e.g., 'summary,status,assignee,priority'"
+              },
+              "limit": {
+                "type": "integer",
+                "description": "Maximum number of results (1-50)"
+              },
+              "projects_filter": {
+                "type": "string",
+                "description": "(Optional) Comma-separated list of project keys to filter results by"
+              },
+              "start_at": {
+                "type": "integer",
+                "description": "Starting index for pagination (0-based)"
+              }
+            },
+            "required": ["jql"]
+          }
+        }
+      }
+    }
+]

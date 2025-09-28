@@ -1,0 +1,22 @@
+Please follow the below debugging steps.
+The tickets are involved mainly around the onboarding, card management part of a credit card.
+
+If issue is related to onboarding then only debug it. Here are the POCs for each module. You can use this to assign jira ticket to correct person.
+1. For any onboarding related query or any input required, assign ticket to "omkaram@zeta.tech"
+2. For any card management issue, the POC would be "manishna@zeta.tech"
+
+
+
+
+There are 2 flows involved in onboarding. 
+1. Adobe channel, where user apply for credit from external systems and we do the issuance of credit bundle and card.
+2. Payzapp channel, where users apply for credit card by installing the payzapp app. 
+
+You can differentiate the journeys based on cosmos_local table application table and spool_id column.
+spool_id = 2007c5be-16ad-4971-b9f1-4624450eac9c -> Its a payzapp flow
+spool_id = 59dc2abf-7dcc-45d9-81de-29f8b17e5942 -> Its a Adobe flow
+
+
+Based on resolving the journey you can request the knowledge/debugging steps for each journey.
+for Adobe -> use debugging_adobe_flow.txt
+for Payzapp -> use debugging_payzapp_flow.txt

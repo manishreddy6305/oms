@@ -1,0 +1,98 @@
+Why This Happens
+
+Chunking:
+
+You split your doc into fixed windows (e.g., 500 tokens).
+
+Step lists, tables, structured flows get cut awkwardly.
+
+Only the first chunk has “onboarding” keyword, so embeddings of later chunks don’t align strongly with “onboarding”.
+
+Cosine similarity:
+
+Embeddings capture semantic meaning, but if a chunk doesn’t explicitly mention "onboarding," similarity drops.
+
+Result: You only retrieve the header + early steps, while rest of the process is ignored.
+
+How to Fix This
+
+Here are practical RAG upgrades to make sure you don’t lose chunks:
+
+1. Semantic Section-Level Chunking (Instead of Blind Windowing)
+
+Instead of splitting by size only, split by semantic structure:
+
+Example: Split whenever there’s a new numbered section or heading.
+
+“Onboarding Process” becomes one logical block with all 22 steps, not multiple broken chunks.
+
+Tools:
+
+LangChain RecursiveCharacterTextSplitter
+ with custom rules
+
+Or preprocess with regex: \n\d+\. → treat as boundaries.
+
+2. Metadata Tagging
+
+When chunking, attach document context tags (like section header = “Onboarding Process”).
+
+So every chunk inherits topic="onboarding".
+
+Even if steps don’t mention “onboarding”, retrieval can still pick them up because of metadata filtering.
+
+3. Hierarchical Retrieval (Parent-Child Chunking)
+
+Store both:
+
+Small chunks (better semantic precision).
+
+Parent chunk (the whole onboarding section).
+
+Retrieval pipeline:
+
+Search among smaller chunks.
+
+When you find a match, return the parent section as context.
+
+Result: User asks about onboarding → retrieves entire 22-step block.
+
+4. Multi-Vector Retrieval
+
+For each chunk, store multiple embeddings:
+
+Embedding of the chunk text itself.
+
+Embedding of the section header.
+
+Then retrieve using both signals.
+
+That way, "onboarding" matches to all onboarding-related steps.
+
+5. Hybrid Retrieval (Semantic + Keyword/Filters)
+
+Combine:
+
+Vector similarity (semantic match).
+
+Keyword search (BM25, Elastic, or even simple substring).
+
+So query “onboarding” hits everything under that section, even if embeddings missed.
+
+6. Chain-of-Thought Retrieval with a Cheap LLM
+
+Retrieve top ~50 chunks (like you mentioned earlier).
+
+Send them to a cheaper LLM (e.g., Nova Micro) to group & merge relevant context.
+
+Example prompt:
+
+“The user asked about onboarding. From the following chunks, collect all steps related to onboarding, even if the keyword doesn’t appear in every chunk.”
+
+This avoids missing critical parts of a process flow.
+
+✅ Best Practical Fix (in your onboarding case):
+
+Use semantic section-aware chunking + metadata tagging.
+
+If you want extra robustness, combine with hierarchical retrieval (return whole section when any step matches).

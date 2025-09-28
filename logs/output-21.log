@@ -1,0 +1,355 @@
+2025-09-13T18:45:08.330700Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-13T18:45:08.343235Z  INFO rmcp::handler::server: client initialized
+2025-09-13T18:45:08.343257Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-13T18:45:08.408Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-13T18:45:08.409Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-13T18:45:08.409Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+[09/13/25 18:45:10] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+GitHub MCP Server running on stdio
+INFO:     Will watch for changes in these directories: ['/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [61370] using StatReload
+📨 Sent initialized notification
+📨 Sent initialized notification
+2025-09-13T18:45:12.560471Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-13T18:45:12.571175Z  INFO rmcp::handler::server: client initialized
+2025-09-13T18:45:12.571211Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-13T18:45:12.645Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-13T18:45:12.646Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-13T18:45:12.646Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+[09/13/25 18:45:14] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+GitHub MCP Server running on stdio
+INFO:     Started server process [61394]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'mcp_router.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [61394]
+2025-09-13T18:45:51.741715Z  INFO rmcp::service: input stream terminated
+2025-09-13T18:45:51.741795Z  INFO rmcp::service: serve finished quit_reason=Closed
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutting down...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutdown complete.
+INFO - mcp-atlassian.utils.lifecycle - Server stopped, flushing output streams...
+2025-09-13T18:45:52.762117Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-13T18:45:52.773130Z  INFO rmcp::handler::server: client initialized
+2025-09-13T18:45:52.773155Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-13T18:45:52.937Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-13T18:45:52.938Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-13T18:45:52.938Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+[09/13/25 18:45:54] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+GitHub MCP Server running on stdio
+INFO:     Started server process [61419]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+{"timestamp":"2025-09-13T18:47:16.447Z","level":"info","message":"Calling tool...","data":{"tool":"execute_query"}}
+INFO: Calling tool...
+{"timestamp":"2025-09-13T18:47:27.073Z","level":"info","message":"Calling tool...","data":{"tool":"execute_query"}}
+INFO: Calling tool...
+📨 Sent initialized notification
+📨 Sent initialized notification
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'execute_query', 'params': {'database_id': 7, 'query': "SELECT id, spool_id, status, created_at, updated_at FROM application WHERE id = '2c831ee8-80f3-42ff-94ba-dc0b41aad205' ORDER BY created_at DESC LIMIT 1"}}
+MCPROUTER: Execued tool with command: {"tool_name": "execute_query", "params": {"database_id": 7, "query": "SELECT id, spool_id, status, created_at, updated_at FROM application WHERE id = '2c831ee8-80f3-42ff-94ba-dc0b41aad205' ORDER BY created_at DESC LIMIT 1"}} 
+and result
+[]
+
+
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'execute_query', 'params': {'database_id': 7, 'query': "SELECT * FROM application WHERE id = '2c831ee8-80f3-42ff-94ba-dc0b41aad205'"}}
+MCPROUTER: Execued tool with command: {"tool_name": "execute_query", "params": {"database_id": 7, "query": "SELECT * FROM application WHERE id = '2c831ee8-80f3-42ff-94ba-dc0b41aad205'"}} 
+and result
+[]
+
+
+INFO:     127.0.0.1:60669 - "POST /invoke HTTP/1.1" 200 OK
+INFO - mcp.server.lowlevel.server - Processing request of type CallToolRequest
+ERROR - mcp-jira - HTTP error during API call: Issue does not exist or you do not have permission to see it.
+[09/13/25 18:48:38] ERROR    Error calling tool 'get_issue': tool_manager.py:129
+                             Issue does not exist or you do                     
+                             not have permission to see it.                     
+                             ╭─ Traceback (most recent cal─╮                    
+                             │ /app/.venv/lib/python3.10/s │                    
+                             │ ite-packages/fastmcp/tools/ │                    
+                             │ tool_manager.py:120 in      │                    
+                             │ call_tool                   │                    
+                             │                             │                    
+                             │   117 │   │   │   raise Not │                    
+                             │   118 │   │                 │                    
+                             │   119 │   │   try:          │                    
+                             │ ❱ 120 │   │   │   return aw │                    
+                             │   121 │   │                 │                    
+                             │   122 │   │   # raise ToolE │                    
+                             │   123 │   │   except ToolEr │                    
+                             │                             │                    
+                             │ /app/.venv/lib/python3.10/s │                    
+                             │ ite-packages/fastmcp/tools/ │                    
+                             │ tool.py:144 in run          │                    
+                             │                             │                    
+                             │   141 │   │   type_adapter  │                    
+                             │   142 │   │   result = type │                    
+                             │   143 │   │   if inspect.is │                    
+                             │ ❱ 144 │   │   │   result =  │                    
+                             │   145 │   │                 │                    
+                             │   146 │   │   return _conve │                    
+                             │   147                       │                    
+                             │                             │                    
+                             │ /app/.venv/lib/python3.10/s │                    
+                             │ ite-packages/mcp_atlassian/ │                    
+                             │ servers/jira.py:154 in      │                    
+                             │ get_issue                   │                    
+                             │                             │                    
+                             │    151 │   if fields and fi │                    
+                             │    152 │   │   fields_list  │                    
+                             │    153 │                    │                    
+                             │ ❱  154 │   issue = jira.get │                    
+                             │    155 │   │   issue_key=is │                    
+                             │    156 │   │   fields=field │                    
+                             │    157 │   │   expand=expan │                    
+                             │                             │                    
+                             │ /app/.venv/lib/python3.10/s │                    
+                             │ ite-packages/mcp_atlassian/ │                    
+                             │ jira/issues.py:144 in       │                    
+                             │ get_issue                   │                    
+                             │                             │                    
+                             │    141 │   │   │   │   prop │                    
+                             │    142 │   │   │            │                    
+                             │    143 │   │   │   # Get th │                    
+                             │ ❱  144 │   │   │   issue =  │                    
+                             │    145 │   │   │   │   issu │                    
+                             │    146 │   │   │   │   expa │                    
+                             │    147 │   │   │   │   fiel │                    
+                             │                             │                    
+                             │ /app/.venv/lib/python3.10/s │                    
+                             │ ite-packages/atlassian/jira │                    
+                             │ .py:1195 in get_issue       │                    
+                             │                             │                    
+                             │   1192 │   │   if expand:   │                    
+                             │   1193 │   │   │   params[" │                    
+                             │   1194 │   │   params["upda │                    
+                             │ ❱ 1195 │   │   return self. │                    
+                             │   1196 │                    │                    
+                             │   1197 │   def epic_issues( │                    
+                             │        Optional[str] = None │                    
+                             │   1198 │   │   """          │                    
+                             │                             │                    
+                             │ /app/.venv/lib/python3.10/s │                    
+                             │ ite-packages/atlassian/rest │                    
+                             │ _client.py:556 in get       │                    
+                             │                             │                    
+                             │    553 │   │   :param advan │                    
+                             │    554 │   │   :return:     │                    
+                             │    555 │   │   """          │                    
+                             │ ❱  556 │   │   response = s │                    
+                             │    557 │   │   │   "GET",   │                    
+                             │    558 │   │   │   path=pat │                    
+                             │    559 │   │   │   flags=fl │                    
+                             │                             │                    
+                             │ /app/.venv/lib/python3.10/s │                    
+                             │ ite-packages/atlassian/rest │                    
+                             │ _client.py:445 in request   │                    
+                             │                             │                    
+                             │    442 │   │   if self.adva │                    
+                             │    443 │   │   │   return r │                    
+                             │    444 │   │                │                    
+                             │ ❱  445 │   │   self.raise_f │                    
+                             │    446 │   │   return respo │                    
+                             │    447 │                    │                    
+                             │    448 │   # both True      │                    
+                             │                             │                    
+                             │ /app/.venv/lib/python3.10/s │                    
+                             │ ite-packages/atlassian/rest │                    
+                             │ _client.py:994 in           │                    
+                             │ raise_for_status            │                    
+                             │                             │                    
+                             │    991 │   │   │   │   log. │                    
+                             │    992 │   │   │   │   resp │                    
+                             │    993 │   │   │   else:    │                    
+                             │ ❱  994 │   │   │   │   rais │                    
+                             │    995 │   │   else:        │                    
+                             │    996 │   │   │   response │                    
+                             │    997                      │                    
+                             ╰─────────────────────────────╯                    
+                             HTTPError: Issue does not exist                    
+                             or you do not have permission                      
+                             to see it.                                         
+ERROR - FastMCP.fastmcp.tools.tool_manager - Error calling tool 'get_issue': Issue does not exist or you do not have permission to see it.
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.10/site-packages/fastmcp/tools/tool_manager.py", line 120, in call_tool
+    return await tool.run(arguments)
+  File "/app/.venv/lib/python3.10/site-packages/fastmcp/tools/tool.py", line 144, in run
+    result = await result
+  File "/app/.venv/lib/python3.10/site-packages/mcp_atlassian/servers/jira.py", line 154, in get_issue
+    issue = jira.get_issue(
+  File "/app/.venv/lib/python3.10/site-packages/mcp_atlassian/jira/issues.py", line 144, in get_issue
+    issue = self.jira.get_issue(
+  File "/app/.venv/lib/python3.10/site-packages/atlassian/jira.py", line 1195, in get_issue
+    return self.get(url, params=params)
+  File "/app/.venv/lib/python3.10/site-packages/atlassian/rest_client.py", line 556, in get
+    response = self.request(
+  File "/app/.venv/lib/python3.10/site-packages/atlassian/rest_client.py", line 445, in request
+    self.raise_for_status(response)
+  File "/app/.venv/lib/python3.10/site-packages/atlassian/rest_client.py", line 994, in raise_for_status
+    raise HTTPError(error_msg, response=response)
+requests.exceptions.HTTPError: Issue does not exist or you do not have permission to see it.
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'execute_elasticsearch_query', 'params': {'index': 'logs-*', 'body': {'query': {'bool': {'must': [{'match': {'context.application_id': '2c831ee8-80f3-42ff-94ba-dc0b41aad205'}}, {'range': {'@timestamp': {'gte': 'now-30d'}}}]}}, 'sort': [{'@timestamp': 'asc'}], 'size': 100}}}
+MCPROUTER: Execued tool with command: {"tool_name": "execute_elasticsearch_query", "params": {"index": "logs-*", "body": {"query": {"bool": {"must": [{"match": {"context.application_id": "2c831ee8-80f3-42ff-94ba-dc0b41aad205"}}, {"range": {"@timestamp": {"gte": "now-30d"}}}]}}, "sort": [{"@timestamp": "asc"}], "size": 100}}} 
+and result
+{"jsonrpc": "2.0", "id": 1, "result": {"content": [{"type": "text", "text": "Total results: 0, showing 0."}], "isError": false}}
+
+
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'jira_get_issue', 'params': {'issue_key': 'PIXEL-1234'}}
+INFO:     127.0.0.1:60901 - "POST /invoke HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/fastapi/routing.py", line 302, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/fastapi/routing.py", line 215, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 2476, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/server/app.py", line 41, in orchestrate
+    execution = process(prompt_version, key, seed)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/converse_style_orchestrator.py", line 154, in process
+    tool_result_msg = handle_tool_use(execution=execution, tool_use_block=tool_use_block)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/converse_style_orchestrator.py", line 38, in handle_tool_use
+    result = mcp_router.execute_tool(
+            execution,
+    ...<3 lines>...
+            }
+    )
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/mcp_router.py", line 73, in execute_tool
+    res = self.get_issue(params)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/mcp_router.py", line 155, in get_issue
+    return self.jira_client.get_issue(issue_key=params["issue_key"])
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/jira_mcp_client/client.py", line 121, in get_issue
+    return json.loads(raw_text)
+           ~~~~~~~~~~^^^^^^^^^^
+  File "/Users/omkaram/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/omkaram/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+{"timestamp":"2025-09-13T18:49:38.003Z","level":"info","message":"Shutting down server..."}
+INFO: Shutting down server...
+time="2025-09-13T18:49:38Z" level=info msg="shutting down server..."
+{"timestamp":"2025-09-13T18:49:38.007Z","level":"info","message":"Shutting down server..."}
+time="2025-09-13T18:49:38Z" level=info msg="shutting down server..."
+INFO: Shutting down server...
+INFO:     Shutting down
+INFO:     Finished server process [61419]
+INFO:     Stopping reloader process [61370]
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutting down...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutdown complete.
+INFO - mcp-atlassian.utils.lifecycle - Server stopped, flushing output streams...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutting down...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutdown complete.
+INFO - mcp-atlassian.utils.lifecycle - Server stopped, flushing output streams...

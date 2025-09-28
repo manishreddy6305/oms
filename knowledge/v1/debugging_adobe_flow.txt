@@ -1,0 +1,60 @@
+# Adobe flow involves 2 stages if cosmos application
+1. DATA_CAPTURE: This is the step where we gather data in Cosmos. Once done, PROVISIONING stage will be initiated
+2. PROVISIONING: This is the stage we do provisoning e.g creating auth profile id, creating/updating account holder, 
+    bundle issuance(bundle is nothing but the credit account, cashback account, etc.), card issuance, theme(theme is a physical card color) selection followed by card dispatch
+
+
+turbo-sourcing service takes care of application in DATA_CAPTURE stage.
+turbo-provisioning service takes card of applications in PROVISIONING stage
+
+
+# Here's Sourcing flow,
+1. The external system calls turbo-sourcing services endpoint POST /spools/{spoolId}/applications. This steps will fill the data and creates application
+2. Once application is created, the turbo-sourcing service marks DATA_CAPTURE stage as completed and application will move to PROVISIONING stage by performing complete action. 
+
+
+
+# Here's provisoning flow,
+1. When application is in provisioning stage,  kafka invokes turbo-provisioning services 
+/spools/{spoolId}/applications/{applicationId}/provisions endpoint. 
+2. This endpoint invokes a workflow consisting of steps 
+
+- AUTH_PROFILE_CREATION -> This step creats auth profile
+- DEFAULT_CONFIGURATION -> This step adds default configuration for choice of networks(VISA, RUPAY) and default card theme/color 
+- VALIDATION -> This step performs dedupe validations, also check if user has existing credit account. If yes, application will be marked as failed with business failure
+- ACCOUNT_HOLDER_SETUP -> This steps updates/creats account holder based on information form cosmso applications sections. mars service APIs are invoked to perform actions 
+- BUNDLE_ISSUANCE -> this steps issues credit bundle. aether service's /issueBundle APIs will be involed to perform this
+- CARD_ISSUANCE -> This setps issues selected card networks such as VISA. RUPAY. aether's /issuePrimaryCard service APIs will be involed to perform this
+- CARD_STATUS_VALIDATION -> This steps ensure if issued cards are activate and ready for use. aether's api/v3/tenants/{ifiId}/bundleDetails/{issuanceId} API will be invoked to check the card status
+- THEME_SELECTION - This steps makes a card theme/color selection out off all available themes.
+- DISPATCH -> At the end, this step dispatches the card. -> turbo-account-management-service's /obCompletion  endpoint will be invoked to dispatch the card.
+
+
+
+# ebugging Syteps to be followed.
+1. Get required data from cosmos tables
+2. Fetch logs based on API endpoints. use * format while searching for logs. From the log you can query for mdc.trace_id field which returns the logs of full flow. 
+trictly use regexes as many as possible to not over fetch logs.
+3. Query elastic search index "service-logs".
+4. Analyze the field such as parsedMessage.title, parsedMessage.attributes.stackTrace, parsedMessage.attributes.message
+and figure out the possible issue.
+5. You can request for knowledge base for any additional knowledge. 
+6. Most probably, query parsedMessage.title with cosmos application wildcard and you will get the the flow id with which you can get the full flow logs
+
+
+
+Log fields description
+timestamp -> e.g. 2025-09-09T15:10:29.281928105Z"
+app -> The name of service who pushed this log e.g. "turbo-provisioning"
+clusterName -> Kunernetes cluster this service recides in e.g "turboonboarding"
+host -> kubernetes pod id. e.g. "turbo-provisioning-587fc96bf5-gwg7z", 
+logger -> Logger e.g. "in.zeta.springframework.boot.commons.logging.HttpLogger"
+pod -> kubernetes pod id. e.g "turbo-provisioning-587fc96bf5-gwg7z"
+level ->  log level
+trace_id -> Trace id common for all the logs in a flow. Can be used to fetch the whole flow logs. e.g. "67f8ef39325c8465e877893428aa2ca9"
+span_id -> distributed tracing span id.
+baggage#flow_name -> flow name e.g "turboonboarding.turbo-provisioning--other"
+baggage#upstream -> parent service who invoked this call. e.g. "turbo-provisioning"
+baggage#auth_profile_id -> auth_profile_id of the token used to invoke this flow. e.g "hB5HyA_afplZ5yWQ9o5bNQ=="
+parsedMessage.title -> Log titles appear here. Its a API path for HttpLogger
+parsedMessage.attributes -> Additional request attributes

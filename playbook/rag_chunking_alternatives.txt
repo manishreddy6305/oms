@@ -1,0 +1,118 @@
+Level 1: Smarter Chunking
+
+Instead of cutting text at arbitrary character/token counts, you can chunk by semantic units:
+
+Paragraph-based or heading-based splitting.
+
+Sentence embeddings → group sentences until a semantic threshold is crossed.
+
+Hybrid approach: length + semantics.
+
+Tools: semantic-text-splitter, LangChain’s SemanticChunker, LlamaIndex’s SentenceWindowRetriever.
+
+👉 Effect: chunks align better with meaning instead of arbitrary cuts.
+
+🔹 Level 2: Rerankers
+
+First, retrieve a bigger pool of candidates using embeddings (say top-50).
+
+Then, apply a cross-encoder reranker (e.g., ms-marco-MiniLM-L-6-v2, or Cohere Rerank) that takes (query, document) together and outputs a relevance score.
+
+Much more precise than cosine similarity alone.
+
+👉 Effect: relevance improves drastically, especially with long/complex queries.
+👉 Cost: rerankers are slower/more expensive than embeddings.
+
+🔹 Level 3: Hybrid Search
+
+Combine vector search (semantic) with keyword/BM25 search (lexical).
+
+Why? Some queries depend on exact terms (error code 503), which embeddings may miss.
+
+Tools: OpenSearch supports hybrid scoring, Pinecone has hybrid retrieval, Weaviate supports hybrid search out-of-the-box.
+
+👉 Effect: covers both semantic similarity and keyword exact matches.
+👉 Example: query “TRC-10000 bug in login” → hybrid retrieval ensures issue key “TRC-10000” is not lost.
+
+🔹 Level 4: Multi-Vector / ColBERT
+
+Instead of one embedding vector per chunk, store multiple vectors per passage (token-level or phrase-level).
+
+ColBERT (from Meta) is a popular method.
+
+This allows very fine-grained retrieval, much better at matching small details in large contexts.
+
+👉 Effect: best accuracy in dense retrieval benchmarks.
+👉 Cost: more storage + compute.
+
+🔹 Level 5: Retrieval-Augmented Rewriting
+
+Before retrieval, rewrite the user query into multiple variations:
+
+Clarifications, synonyms, expanded keywords.
+
+Then run retrieval for each variation and merge results.
+
+Tooling: HyDE (hypothetical document embeddings), query expansion with LLMs.
+
+👉 Effect: improves recall (finding more relevant chunks).
+
+🔹 Level 6: Hierarchical / Multi-Hop Retrieval
+
+If your data is structured (e.g., Jira → Project → Epic → Story → Sub-task), you can do multi-step retrieval:
+
+First retrieve relevant project/epic.
+
+Then drill down into issues under that epic.
+
+Works well when you have millions of documents but strong hierarchy.
+
+✅ Recommendation for you (Jira-like context data):
+
+Use semantic chunking (not fixed-size).
+
+Use hybrid search (BM25 + embeddings) to handle exact IDs & semantic queries.
+
+Add a reranker to clean up the top 20–50 results into top 5 highly relevant chunks.
+
+That will already give you production-grade retrieval.
+If your dataset grows very large (millions+), consider ColBERT or hierarchical retrieval.
+
+
+
+
+
+=====================================================
+🔹 The Flow
+
+Embedding Retrieval
+
+Use embeddings + cosine similarity (cheap, fast) to pull top 40–50 chunks.
+
+This stage prioritizes recall → “don’t miss relevant stuff.”
+
+Context Curation (cheap LLM)
+
+Send the top chunks to a smaller/cheaper LLM (like Anthropic Haiku, OpenAI GPT-4o-mini, Amazon Nova Lite).
+
+Ask it to summarize, filter, and restructure the retrieved context into:
+
+Deduplicated information
+
+Merged overlapping facts
+
+Focused on query intent
+
+Output a clean, curated context pack (e.g., 2–3k tokens max).
+
+Final Answer (expensive LLM)
+
+Feed the curated context + user query into your stronger model (e.g., GPT-5, Claude Opus, Amazon Nova Pro).
+
+Because the context is cleaner, the expensive LLM:
+
+Works faster (less noise)
+
+Costs less (fewer tokens)
+
+Produces higher-quality answers

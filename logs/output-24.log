@@ -1,0 +1,173 @@
+2025-09-13T19:12:23.870085Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-13T19:12:23.883630Z  INFO rmcp::handler::server: client initialized
+2025-09-13T19:12:23.883647Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-13T19:12:23.969Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-13T19:12:23.970Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-13T19:12:23.970Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+[09/13/25 19:12:25] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+GitHub MCP Server running on stdio
+INFO:     Will watch for changes in these directories: ['/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [63377] using StatReload
+📨 Sent initialized notification
+📨 Sent initialized notification
+2025-09-13T19:12:27.827766Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-13T19:12:27.841601Z  INFO rmcp::handler::server: client initialized
+2025-09-13T19:12:27.841643Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-13T19:12:27.939Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-13T19:12:27.939Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-13T19:12:27.939Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+[09/13/25 19:12:29] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+GitHub MCP Server running on stdio
+INFO:     Started server process [63393]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+{"timestamp":"2025-09-13T19:13:05.468Z","level":"info","message":"Calling tool...","data":{"tool":"execute_query"}}
+INFO: Calling tool...
+{"timestamp":"2025-09-13T19:13:11.198Z","level":"info","message":"Shutting down server..."}
+INFO: Shutting down server...
+time="2025-09-13T19:13:11Z" level=info msg="shutting down server..."
+time="2025-09-13T19:13:11Z" level=info msg="stdioserverError reading input: context canceled"
+{"timestamp":"2025-09-13T19:13:11.201Z","level":"info","message":"Shutting down server..."}
+INFO: Shutting down server...
+time="2025-09-13T19:13:11Z" level=info msg="shutting down server..."
+time="2025-09-13T19:13:11Z" level=info msg="stdioserverError reading input: context canceled"
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+📨 Sent initialized notification
+📨 Sent initialized notification
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'execute_query', 'params': {'database_id': 7, 'query': "SELECT id, spool_id, status, created_at, updated_at FROM application WHERE id = '2c831ee8-80f3-42ff-94ba-dc0b41aad205'"}}
+MCPROUTER: Execued tool with command: {"tool_name": "execute_query", "params": {"database_id": 7, "query": "SELECT id, spool_id, status, created_at, updated_at FROM application WHERE id = '2c831ee8-80f3-42ff-94ba-dc0b41aad205'"}} 
+and result
+[{"id": "2c831ee8-80f3-42ff-94ba-dc0b41aad205", "spool_id": "59dc2abf-7dcc-45d9-81de-29f8b17e5942", "status": "PROVISIONING_PENDING", "created_at": "2025-09-12T14:34:58.734Z", "updated_at": "2025-09-12T14:35:11.59Z"}]
+
+
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'execute_query', 'params': {'database_id': 7, 'query': "SELECT name, status, reason_code, reason_description FROM application_stage WHERE application_id = '2c831ee8-80f3-42ff-94ba-dc0b41aad205' ORDER BY created_at DESC"}}
+INFO:     127.0.0.1:63630 - "POST /invoke HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/fastapi/routing.py", line 302, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/fastapi/routing.py", line 215, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 2476, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/server/app.py", line 41, in orchestrate
+    execution = process(prompt_version, key, seed)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/converse_style_orchestrator.py", line 159, in process
+    tool_result_msg = handle_tool_use(execution=execution, tool_use_block=tool_use_block)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/converse_style_orchestrator.py", line 38, in handle_tool_use
+    result = mcp_router.execute_tool(
+            execution,
+    ...<3 lines>...
+            }
+    )
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/mcp_router.py", line 67, in execute_tool
+    res = self.execute_query(params)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/mcp_router.py", line 120, in execute_query
+    result = self.metabaseMCPClient.execute_query(
+        database_id=database_id, query=query
+    )
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/metabase_mcp_client/client.py", line 82, in execute_query
+    resp = self._send_request(req)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/metabase_mcp_client/client.py", line 39, in _send_request
+    self.proc.stdin.write(json.dumps(request) + "\n")
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [63393]
+INFO:     Stopping reloader process [63377]
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutting down...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutdown complete.
+INFO - mcp-atlassian.utils.lifecycle - Server stopped, flushing output streams...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutting down...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutdown complete.
+INFO - mcp-atlassian.utils.lifecycle - Server stopped, flushing output streams...

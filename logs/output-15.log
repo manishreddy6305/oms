@@ -1,0 +1,542 @@
+2025-09-09T21:53:47.797784Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-09T21:53:47.808062Z  INFO rmcp::handler::server: client initialized
+2025-09-09T21:53:47.808080Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-09T21:53:47.824Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-09T21:53:47.825Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-09T21:53:47.826Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+DEBUG - mcp-atlassian - Logging level set to: DEBUG
+DEBUG - mcp-atlassian - Logging stream set to: stderr
+DEBUG - mcp-atlassian - Attempting to load environment from default .env file if it exists
+DEBUG - mcp-atlassian - Final transport determined: stdio
+DEBUG - mcp-atlassian - Final port for HTTP transports: 8000
+DEBUG - mcp-atlassian - Final host for HTTP transports: 0.0.0.0
+DEBUG - mcp-atlassian - Final path for Streamable HTTP: FastMCP default
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Confluence MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Jira MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Atlassian MCP'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+DEBUG - mcp-atlassian.utils.lifecycle - SIGPIPE handler registered
+DEBUG - mcp-atlassian - STDIO transport detected, setting up stdin monitoring
+DEBUG - mcp-atlassian - Starting asyncio event loop...
+DEBUG - asyncio - Using selector: EpollSelector
+[09/09/25 21:53:49] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+DEBUG - mcp_atlassian.utils.tools - ENABLED_TOOLS environment variable not set or empty.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+DEBUG - mcp.server.lowlevel.server - Received message: root=InitializedNotification(method='notifications/initialized', params=NotificationParams(meta=None), jsonrpc='2.0')
+2025-09-09T21:53:51.113890Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-09T21:53:51.123968Z  INFO rmcp::handler::server: client initialized
+2025-09-09T21:53:51.123980Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-09T21:53:51.199Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-09T21:53:51.200Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-09T21:53:51.200Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+DEBUG - mcp-atlassian - Logging level set to: DEBUG
+DEBUG - mcp-atlassian - Logging stream set to: stderr
+DEBUG - mcp-atlassian - Attempting to load environment from default .env file if it exists
+DEBUG - mcp-atlassian - Final transport determined: stdio
+DEBUG - mcp-atlassian - Final port for HTTP transports: 8000
+DEBUG - mcp-atlassian - Final host for HTTP transports: 0.0.0.0
+DEBUG - mcp-atlassian - Final path for Streamable HTTP: FastMCP default
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Confluence MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Jira MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Atlassian MCP'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+DEBUG - mcp-atlassian.utils.lifecycle - SIGPIPE handler registered
+DEBUG - mcp-atlassian - STDIO transport detected, setting up stdin monitoring
+DEBUG - mcp-atlassian - Starting asyncio event loop...
+DEBUG - asyncio - Using selector: EpollSelector
+[09/09/25 21:53:52] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+DEBUG - mcp_atlassian.utils.tools - ENABLED_TOOLS environment variable not set or empty.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+DEBUG - mcp.server.lowlevel.server - Received message: root=InitializedNotification(method='notifications/initialized', params=NotificationParams(meta=None), jsonrpc='2.0')
+INFO:     Will watch for changes in these directories: ['/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [91089] using StatReload
+cmd : ['docker', 'run', '-i', '--rm', '-e', 'ES_URL=https://host.docker.internal:9200', '-e', 'ES_API_KEY=djFYN0w1a0JVclJnNGRvdndxbWk6TzJ4dV9XZkpiRHB1S2RnTng1cGpCZw==', '-e', 'ES_SSL_SKIP_VERIFY=true', 'mcp/elasticsearch:latest', 'stdio']
+📨 Sent initialized notification
+cmd : ['docker', 'run', '-i', '--rm', '-e', 'ES_URL=https://host.docker.internal:9200', '-e', 'ES_API_KEY=djFYN0w1a0JVclJnNGRvdndxbWk6TzJ4dV9XZkpiRHB1S2RnTng1cGpCZw==', '-e', 'ES_SSL_SKIP_VERIFY=true', 'mcp/elasticsearch:latest', 'stdio']
+📨 Sent initialized notification
+2025-09-09T21:53:55.037540Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-09T21:53:55.051343Z  INFO rmcp::handler::server: client initialized
+2025-09-09T21:53:55.051377Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-09T21:53:55.162Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-09T21:53:55.163Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-09T21:53:55.164Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+DEBUG - mcp-atlassian - Logging level set to: DEBUG
+DEBUG - mcp-atlassian - Logging stream set to: stderr
+DEBUG - mcp-atlassian - Attempting to load environment from default .env file if it exists
+DEBUG - mcp-atlassian - Final transport determined: stdio
+DEBUG - mcp-atlassian - Final port for HTTP transports: 8000
+DEBUG - mcp-atlassian - Final host for HTTP transports: 0.0.0.0
+DEBUG - mcp-atlassian - Final path for Streamable HTTP: FastMCP default
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Confluence MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Jira MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Atlassian MCP'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+DEBUG - mcp-atlassian.utils.lifecycle - SIGPIPE handler registered
+DEBUG - mcp-atlassian - STDIO transport detected, setting up stdin monitoring
+DEBUG - mcp-atlassian - Starting asyncio event loop...
+DEBUG - asyncio - Using selector: EpollSelector
+[09/09/25 21:53:56] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+DEBUG - mcp_atlassian.utils.tools - ENABLED_TOOLS environment variable not set or empty.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+DEBUG - mcp.server.lowlevel.server - Received message: root=InitializedNotification(method='notifications/initialized', params=NotificationParams(meta=None), jsonrpc='2.0')
+2025-09-09T21:53:58.331699Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-09T21:53:58.342794Z  INFO rmcp::handler::server: client initialized
+2025-09-09T21:53:58.342807Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-09T21:53:58.387Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-09T21:53:58.388Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-09T21:53:58.389Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+DEBUG - mcp-atlassian - Logging level set to: DEBUG
+DEBUG - mcp-atlassian - Logging stream set to: stderr
+DEBUG - mcp-atlassian - Attempting to load environment from default .env file if it exists
+DEBUG - mcp-atlassian - Final transport determined: stdio
+DEBUG - mcp-atlassian - Final port for HTTP transports: 8000
+DEBUG - mcp-atlassian - Final host for HTTP transports: 0.0.0.0
+DEBUG - mcp-atlassian - Final path for Streamable HTTP: FastMCP default
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Confluence MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Jira MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Atlassian MCP'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+DEBUG - mcp-atlassian.utils.lifecycle - SIGPIPE handler registered
+DEBUG - mcp-atlassian - STDIO transport detected, setting up stdin monitoring
+DEBUG - mcp-atlassian - Starting asyncio event loop...
+DEBUG - asyncio - Using selector: EpollSelector
+[09/09/25 21:54:00] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+DEBUG - mcp_atlassian.utils.tools - ENABLED_TOOLS environment variable not set or empty.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+DEBUG - mcp.server.lowlevel.server - Received message: root=InitializedNotification(method='notifications/initialized', params=NotificationParams(meta=None), jsonrpc='2.0')
+INFO:     Started server process [91113]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+DEBUG - mcp.server.lowlevel.server - Received message: <mcp.shared.session.RequestResponder object at 0xffffad7e7520>
+INFO - mcp.server.lowlevel.server - Processing request of type CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Dispatching request of type CallToolRequest
+DEBUG - mcp-atlassian.servers.dependencies - get_jira_fetcher: ENTERED. Context ID: 281473592482672
+DEBUG - mcp-atlassian.servers.dependencies - Not in an HTTP request context. Attempting global JiraFetcher for non-HTTP.
+DEBUG - mcp-atlassian.servers.dependencies - get_jira_fetcher: Using global JiraFetcher from lifespan_context. Global config auth_type: basic
+DEBUG - mcp-jira - Initializing Jira client with Basic auth. URL: https://zeta-tm.atlassian.net, Username: omkaram@zeta.tech, API Token present: True, Is Cloud: True
+DEBUG - mcp-jira - Jira client initialized. Session headers (Authorization masked): {'User-Agent': 'python-requests/2.32.4', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'}
+DEBUG - mcp-jira - Testing Jira authentication by retrieving current user info...
+DEBUG - atlassian.rest_client - curl --silent -X GET -H 'Content-Type: application/json' -H 'Accept: application/json'  'https://zeta-tm.atlassian.net/rest/api/2/myself'
+DEBUG - urllib3.connectionpool - Starting new HTTPS connection (1): zeta-tm.atlassian.net:443
+DEBUG - urllib3.connectionpool - https://zeta-tm.atlassian.net:443 "GET /rest/api/2/myself HTTP/1.1" 200 None
+DEBUG - atlassian.rest_client - HTTP: GET rest/api/2/myself -> 200 OK
+DEBUG - atlassian.rest_client - HTTP: Response text -> {"self":"https://zeta-tm.atlassian.net/rest/api/2/user?accountId=61ef7d8acb7c5f006bdf90dc","accountId":"61ef7d8acb7c5f006bdf90dc","accountType":"atlassian","emailAddress":"omkaram@zeta.tech","avatarUrls":{"48x48":"https://secure.gravatar.com/avatar/5e3de20ccb2490520f2c27945334e50b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOA-6.png","24x24":"https://secure.gravatar.com/avatar/5e3de20ccb2490520f2c27945334e50b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOA-6.png","16x16":"https://secure.gravatar.com/avatar/5e3de20ccb2490520f2c27945334e50b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOA-6.png","32x32":"https://secure.gravatar.com/avatar/5e3de20ccb2490520f2c27945334e50b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOA-6.png"},"displayName":"Omkar Amilkanthwar","active":true,"timeZone":"Asia/Kolkata","locale":"en_GB","groups":{"size":6,"items":[]},"applicationRoles":{"size":2,"items":[]},"expand":"groups,applicationRoles"}
+INFO - mcp-jira - Jira authentication successful. Current user: Omkar Amilkanthwar (omkaram@zeta.tech)
+DEBUG - atlassian.rest_client - curl --silent -X GET -H 'Content-Type: application/json' -H 'Accept: application/json'  'https://zeta-tm.atlassian.net/rest/api/2/issue/TRC-28931?fields=updated,reporter,description,priority,assignee,summary,created,labels,issuetype,status&updateHistory=true'
+DEBUG - urllib3.connectionpool - https://zeta-tm.atlassian.net:443 "GET /rest/api/2/issue/TRC-28931?fields=updated,reporter,description,priority,assignee,summary,created,labels,issuetype,status&updateHistory=true HTTP/1.1" 200 None
+DEBUG - atlassian.rest_client - HTTP: GET rest/api/2/issue/TRC-28931 -> 200 OK
+DEBUG - atlassian.rest_client - HTTP: Response text -> {"expand":"renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations","id":"1940375","self":"https://zeta-tm.atlassian.net/rest/api/2/issue/1940375","key":"TRC-28931","fields":{"summary":"Application Stuck in Provisioning Stage. Not progressing. Unable to get the card.","issuetype":{"self":"https://zeta-tm.atlassian.net/rest/api/2/issuetype/10002","id":"10002","description":"A small, distinct piece of work.","iconUrl":"https://zeta-tm.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium","name":"Task","subtask":false,"avatarId":10318,"hierarchyLevel":0},"created":"2025-09-10T03:06:38.894+0530","description":"phone_number: +7329414634","reporter":{"self":"https://zeta-tm.atlassian.net/rest/api/2/user?accountId=61ef7d8acb7c5f006bdf90dc","accountId":"61ef7d8acb7c5f006bdf90dc","emailAddress":"omkaram@zeta.tech","avatarUrls":{"48x48":"https://secure.gravatar.com/avatar/5e3de20ccb2490520f2c27945334e50b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOA-6.png","24x24":"https://secure.gravatar.com/avatar/5e3de20ccb2490520f2c27945334e50b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOA-6.png","16x16":"https://secure.gravatar.com/avatar/5e3de20ccb2490520f2c27945334e50b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOA-6.png","32x32":"https://secure.gravatar.com/avatar/5e3de20ccb2490520f2c27945334e50b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOA-6.png"},"displayName":"Omkar Amilkanthwar","active":true,"timeZone":"Asia/Kolkata","accountType":"atlassian"},"assignee":null,"priority":{"self":"https://zeta-tm.atlassian.net/rest/api/2/priority/5","iconUrl":"https://zeta-tm.atlassian.net/images/icons/priorities/lowest.svg","name":"P5","id":"5"},"updated":"2025-09-10T03:06:39.498+0530","status":{"self":"https://zeta-tm.atlassian.net/rest/api/2/status/10064","description":"","iconUrl":"https://zeta-tm.atlassian.net/","name":"To Do","id":"10064","statusCategory":{"self":"https://zeta-tm.atlassian.net/rest/api/2/statuscategory/2","id":2,"key":"new","colorName":"blue-gray","name":"To Do"}},"labels":[]}}
+DEBUG - atlassian.rest_client - curl --silent -X GET -H 'Content-Type: application/json' -H 'Accept: application/json'  'https://zeta-tm.atlassian.net/rest/api/2/field'
+DEBUG - urllib3.connectionpool - https://zeta-tm.atlassian.net:443 "GET /rest/api/2/field HTTP/1.1" 200 None
+DEBUG - atlassian.rest_client - HTTP: GET rest/api/2/field -> 200 OK
+DEBUG - mcp-jira - Generated/Updated field name map: 6214 entries
+DEBUG - mcp-jira - All field names: ['sr classification', 'parent', 'delivery pod', 'rca required ?'
+
+mmitment': 'customfield_12019', 'Impact on Data Security': 'customfield_12018'}
+DEBUG - mcp.server.lowlevel.server - Response sent
+{"timestamp":"2025-09-09T21:54:36.226Z","level":"info","message":"Calling tool...","data":{"tool":"execute_query"}}
+INFO: Calling tool...
+cmd : ['docker', 'run', '-i', '--rm', '-e', 'ES_URL=https://host.docker.internal:9200', '-e', 'ES_API_KEY=djFYN0w1a0JVclJnNGRvdndxbWk6TzJ4dV9XZkpiRHB1S2RnTng1cGpCZw==', '-e', 'ES_SSL_SKIP_VERIFY=true', 'mcp/elasticsearch:latest', 'stdio']
+📨 Sent initialized notification
+cmd : ['docker', 'run', '-i', '--rm', '-e', 'ES_URL=https://host.docker.internal:9200', '-e', 'ES_API_KEY=djFYN0w1a0JVclJnNGRvdndxbWk6TzJ4dV9XZkpiRHB1S2RnTng1cGpCZw==', '-e', 'ES_SSL_SKIP_VERIFY=true', 'mcp/elasticsearch:latest', 'stdio']
+📨 Sent initialized notification
+
+
+ModelReturned: f{"ResponseMetadata": {"RequestId": "bbd449ce-a55d-43ac-85c3-b680d124ff10", "HTTPStatusCode": 200, "HTTPHeaders": {"date": "Tue, 09 Sep 2025 21:54:21 GMT", "content-type": "application/json", "content-length": "1443", "connection": "keep-alive", "x-amzn-requestid": "bbd449ce-a55d-43ac-85c3-b680d124ff10"}, "RetryAttempts": 0}, "output": {"message": {"role": "assistant", "content": [{"text": "<thinking>\nThe user has asked me to resolve Jira ticket TRC-28931. The first step is to gather detailed information about the ticket, including its summary, description, and current status. This will help determine whether it's an onboarding issue (which requires debugging based on application flow) or a card management problem.\n\nSince I need to analyze the ticket's content before proceeding with database/Elasticsearch queries, I'll start by retrieving the full ticket details using jira_get_issue. This will provide:\n1. The ticket's problem description to identify root cause indicators\n2. Current assignee status\n3. Any existing comments that might show prior troubleshooting\n4. Whether it's related to onboarding (Adobe/Payzapp) or card management\n\nKey requirements from the schema:\n- Must verify if issue is onboarding-related before debugging\n- Need to check spool_id in application table to determine flow type\n- Must follow 10-record query limit\n- Assign to omkaram@ for onboarding issues\n\nNext step: Get ticket details to understand the problem scope and context before making database queries.\n</thinking>\n\n"}, {"toolUse": {"toolUseId": "tooluse_sP_eKMFQRhi847s5j0wvkw", "name": "jira_get_issue", "input": {"issue_key": "TRC-28931"}}}]}}, "stopReason": "tool_use", "usage": {"inputTokens": 4701, "outputTokens": 273, "totalTokens": 4974}, "metrics": {"latencyMs": 10112}}
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'jira_get_issue', 'params': {'issue_key': 'TRC-28931'}}
+MCPROUTER: Execued tool with command: {"tool_name": "jira_get_issue", "params": {"issue_key": "TRC-28931"}} 
+and result
+{"id": "1940375", "key": "TRC-28931", "summary": "Application Stuck in Provisioning Stage. Not progressing. Unable to get the card.", "description": "phone_number: +7329414634", "status": {"name": "To Do", "category": "To Do", "color": "blue-gray"}, "priority": {"name": "P5"}, "assignee": {"display_name": "Unassigned"}, "reporter": {"display_name": "Omkar Amilkanthwar", "name": "Omkar Amilkanthwar", "email": "omkaram@zeta.tech", "avatar_url": "https://secure.gravatar.com/avatar/5e3de20ccb2490520f2c27945334e50b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOA-6.png"}, "created": "2025-09-10T03:06:38.894+0530", "updated": "2025-09-10T03:06:39.498+0530"}
+
+
+
+
+ModelReturned: f{"ResponseMetadata": {"RequestId": "9ac2afda-8328-4dcb-88be-fa347eaa0b17", "HTTPStatusCode": 200, "HTTPHeaders": {"date": "Tue, 09 Sep 2025 21:54:36 GMT", "content-type": "application/json", "content-length": "1534", "connection": "keep-alive", "x-amzn-requestid": "9ac2afda-8328-4dcb-88be-fa347eaa0b17"}, "RetryAttempts": 0}, "output": {"message": {"role": "assistant", "content": [{"text": "<thinking>\nThe ticket TRC-28931 describes an application stuck in the PROVISIONING stage with phone number +7329414634. Since this is an onboarding issue (application provisioning failure), I need to investigate the application's lifecycle stages and error details.\n\nFirst step: Identify the application record using the phone number from the ticket. The contactDetails section in application_section table stores phone numbers. Need to:\n1. Query application_section for phone number match\n2. Get application_id from matching record\n3. Check application.status and provisioning stage details\n\nKey considerations:\n- Must use LIMIT 9 in SQL queries per requirements\n- Need to verify if this is Adobe/Payzapp flow using spool_id\n- Error details in provisioning stage will show failure reason\n\nNext step: Execute SQL query to find application ID associated with the phone number +7329414634 from contactDetails section.\n</thinking>\n\n"}, {"toolUse": {"toolUseId": "tooluse_f68GWsUQRbKUjNlElYjWnA", "name": "execute_query", "input": {"database_id": 1, "query": "SELECT a.id, a.spool_id, a.status, a.ifi_id, ase.details->>'phoneNumber' AS phone_number FROM cosmos-local.application a JOIN cosmos-local.application_section ase ON a.id = ase.application_id WHERE ase.name = 'contactDetails' AND ase.details->>'phoneNumber' = '+7329414634' LIMIT 9;"}}}]}}, "stopReason": "tool_use", "usage": {"inputTokens": 5322, "outputTokens": 338, "totalTokens": 5660}, "metrics": {"latencyMs": 12478}}
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'execute_query', 'params': {'database_id': 1, 'query': "SELECT a.id, a.spool_id, a.status, a.ifi_id, ase.details->>'phoneNumber' AS phone_number FROM cosmos-local.application a JOIN cosmos-local.application_section ase ON a.id = ase.application_id WHERE ase.name = 'contactDetails' AND ase.details->>'phoneNumber' = '+7329414634' LIMIT 9;"}}
+MCPROUTER: Execued tool with command: {"tool_name": "execute_query", "params": {"database_id": 1, "query": "SELECT a.id, a.spool_id, a.status, a.ifi_id, ase.details->>'phoneNumber' AS phone_number FROM cosmos-local.application a JOIN cosmos-local.application_section ase ON a.id = ase.application_id WHERE ase.name = 'contactDetails' AND ase.details->>'phoneNumber' = '+7329414634' LIMIT 9;"}} 
+and result
+[]
+
+
+
+
+ModelReturned: f{"ResponseMetadata": {"RequestId": "f0d5e587-865b-4e6c-b5a8-f6070adc729e", "HTTPStatusCode": 200, "HTTPHeaders": {"date": "Tue, 09 Sep 2025 21:54:48 GMT", "content-type": "application/json", "content-length": "1463", "connection": "keep-alive", "x-amzn-requestid": "f0d5e587-865b-4e6c-b5a8-f6070adc729e"}, "RetryAttempts": 0}, "output": {"message": {"role": "assistant", "content": [{"text": "<thinking>\nThe initial database query using phone number +7329414634 didn't return any results. This could be due to:\n1. Data entry errors in the ticket description\n2. Phone number stored in different format (e.g., without country code)\n3. Application not yet created in database\n\nSince phone number search failed, I need alternative identification methods. The ticket mentions \"Unable to get the card\", which implies card issuance problems during provisioning. The provisioning stage's authProfile sub-process might contain relevant identifiers.\n\nNext step: Search for applications where provisioning stage failed with TECHNICAL_FAILURES (common error type per schema). This will help find applications stuck in provisioning regardless of phone number mismatches. Will check details.reason.code in application_stage.\n</thinking> "}, {"toolUse": {"toolUseId": "tooluse_a6sUlyVmRnOpKkXDUGim-w", "name": "execute_query", "input": {"database_id": 1, "query": "SELECT a.id, a.spool_id, a.status, a.ifi_id, ast.details->'reason'->>'code' AS error_code FROM cosmos-local.application a JOIN cosmos-local.application_stage ast ON a.id = ast.application_id WHERE ast.name = 'PROVISIONING' AND ast.status = 'FAILED' AND ast.details->'reason'->>'code' = 'TECHNICAL_FAILURES' LIMIT 9;"}}}]}}, "stopReason": "tool_use", "usage": {"inputTokens": 5687, "outputTokens": 314, "totalTokens": 6001}, "metrics": {"latencyMs": 10573}}
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'execute_query', 'params': {'database_id': 1, 'query': "SELECT a.id, a.spool_id, a.status, a.ifi_id, ast.details->'reason'->>'code' AS error_code FROM cosmos-local.application a JOIN cosmos-local.application_stage ast ON a.id = ast.application_id WHERE ast.name = 'PROVISIONING' AND ast.status = 'FAILED' AND ast.details->'reason'->>'code' = 'TECHNICAL_FAILURES' LIMIT 9;"}}{"timestamp":"2025-09-09T21:54:48.406Z","level":"info","message":"Calling tool...","data":{"tool":"execute_query"}}
+INFO: Calling tool...
+{"timestamp":"2025-09-09T21:54:59.467Z","level":"info","message":"Calling tool...","data":{"tool":"execute_query"}}
+INFO: Calling tool...
+
+MCPROUTER: Execued tool with command: {"tool_name": "execute_query", "params": {"database_id": 1, "query": "SELECT a.id, a.spool_id, a.status, a.ifi_id, ast.details->'reason'->>'code' AS error_code FROM cosmos-local.application a JOIN cosmos-local.application_stage ast ON a.id = ast.application_id WHERE ast.name = 'PROVISIONING' AND ast.status = 'FAILED' AND ast.details->'reason'->>'code' = 'TECHNICAL_FAILURES' LIMIT 9;"}} 
+and result
+[]
+
+
+
+
+ModelReturned: f{"ResponseMetadata": {"RequestId": "36454af9-8828-4a1a-a479-4a1b6f2bba25", "HTTPStatusCode": 200, "HTTPHeaders": {"date": "Tue, 09 Sep 2025 21:54:59 GMT", "content-type": "application/json", "content-length": "1299", "connection": "keep-alive", "x-amzn-requestid": "36454af9-8828-4a1a-a479-4a1b6f2bba25"}, "RetryAttempts": 0}, "output": {"message": {"role": "assistant", "content": [{"text": "<thinking>\nAfter multiple unsuccessful database queries (phone number search and provisioning error code check both returned empty), I need to verify if there's a data entry error in the ticket's phone number. The original ticket lists phone_number as \"+7329414634\" which might have formatting issues. \n\nKey considerations:\n1. Phone numbers might be stored without country code (+ prefix)\n2. Possible typo in ticket description\n3. Need to try alternative search patterns\n\nNext step: Attempt SQL query with phone number stripped of country code (7329414634) to check if stored without + prefix. This will help confirm if the application exists but was missed due to formatting differences.\n</thinking> "}, {"toolUse": {"toolUseId": "tooluse_4dqT2qwvSGe506Wn22dfgw", "name": "execute_query", "input": {"database_id": 1, "query": "SELECT a.id, a.spool_id, a.status, a.ifi_id, ase.details->>'phoneNumber' AS phone_number FROM cosmos-local.application a JOIN cosmos-local.application_section ase ON a.id = ase.application_id WHERE ase.name = 'contactDetails' AND ase.details->>'phoneNumber' = '7329414634' LIMIT 9;"}}}]}}, "stopReason": "tool_use", "usage": {"inputTokens": 6030, "outputTokens": 285, "totalTokens": 6315}, "metrics": {"latencyMs": 9603}}
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'execute_query', 'params': {'database_id': 1, 'query': "SELECT a.id, a.spool_id, a.status, a.ifi_id, ase.details->>'phoneNumber' AS phone_number FROM cosmos-local.application a JOIN cosmos-local.application_section ase ON a.id = ase.application_id WHERE ase.name = 'contactDetails' AND ase.details->>'phoneNumber' = '7329414634' LIMIT 9;"}}
+MCPROUTER: Execued tool with command: {"tool_name": "execute_query", "params": {"database_id": 1, "query": "SELECT a.id, a.spool_id, a.status, a.ifi_id, ase.details->>'phoneNumber' AS phone_number FROM cosmos-local.application a JOIN cosmos-local.application_section ase ON a.id = ase.application_id WHERE ase.name = 'contactDetails' AND ase.details->>'phoneNumber' = '7329414634' LIMIT 9;"}} 
+and result
+[]
+
+
+
+
+ModelReturned: f{"ResponseMetadata": {"RequestId": "6f7bc09b-451d-4fe9-85ac-f359b53d0a6d", "HTTPStatusCode": 200, "HTTPHeaders": {"date": "Tue, 09 Sep 2025 21:55:09 GMT", "content-type": "application/json", "content-length": "1284", "connection": "keep-alive", "x-amzn-requestid": "6f7bc09b-451d-4fe9-85ac-f359b53d0a6d"}, "RetryAttempts": 0}, "output": {"message": {"role": "assistant", "content": [{"text": "<thinking>\nAll database queries have returned empty results, indicating either:\n1. Application doesn't exist in database\n2. Data inconsistency between frontend and Cosmos\n3. Incorrect ticket details\n\nSince I've exhausted SQL options under the 10-record limit, next step is to:\n1. Check Elasticsearch logs for provisioning errors matching the technical failure pattern\n2. Verify if application creation failed before provisioning stage\n3. Confirm with reporter about phone number accuracy\n\nUsing Elasticsearch to search provisioning service logs for the error message pattern \"Cannot invoke String.equalsIgnoreCase(String) because this.type is null\" (common failure reason) will help identify affected applications even if database entries are missing.\n</thinking>\n\n"}, {"toolUse": {"toolUseId": "tooluse_1GcAgnYqRrmcg3JNObnaWQ", "name": "execute_search", "input": {"index": "provisioning-logs-*", "body": {"query": {"bool": {"must": [{"match_phrase": {"message": "Cannot invoke String.equalsIgnoreCase(String) because this.type is null"}}, {"range": {"@timestamp": {"gte": "now-14d"}}}]}}, "size": 10}}}}]}}, "stopReason": "tool_use", "usage": {"inputTokens": 6344, "outputTokens": 241, "totalTokens": 6585}, "metrics": {"latencyMs": 8243}}
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'execute_search', 'params': {'index': 'provisioning-logs-*', 'body': {'query': {'bool': {'must': [{'match_phrase': {'message': 'Cannot invoke String.equalsIgnoreCase(String) because this.type is null'}}, {'range': {'@timestamp': {'gte': 'now-14d'}}}]}}, 'size': 10}}}
+Unknown tool: execute_search
+INFO:     127.0.0.1:63457 - "POST /invoke HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/fastapi/routing.py", line 302, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/fastapi/routing.py", line 215, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 2476, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/server/app.py", line 40, in orchestrate
+    process(issue_key, seed)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/converse_style_orchestrator.py", line 108, in process
+    tool_result_msg = handle_tool_use(tool_use_block)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/converse_style_orchestrator.py", line 34, in handle_tool_use
+    result = mcp_router.execute_tool(
+            {
+    ...<2 lines>...
+            }
+    )
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/mcp_router.py", line 77, in execute_tool
+    raise ValueError(f"Unknown tool: {tool_name}")
+ValueError: Unknown tool: execute_search
+WARNING:  StatReload detected changes in 'mcp_router.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [91113]
+2025-09-09T22:20:13.581643Z  INFO rmcp::service: input stream terminated
+2025-09-09T22:20:13.581384Z  INFO rmcp::service: input stream terminated
+2025-09-09T22:20:13.582049Z  INFO rmcp::service: serve finished quit_reason=Closed
+2025-09-09T22:20:13.582070Z  INFO rmcp::service: serve finished quit_reason=Closed
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutting down...
+DEBUG - mcp-atlassian.server.main - Cleaning up Jira resources...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutdown complete.
+INFO - mcp-atlassian.utils.lifecycle - Server stopped, flushing output streams...
+DEBUG - mcp-atlassian.utils.lifecycle - Output streams flushed, exiting gracefully
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutting down...
+DEBUG - mcp-atlassian.server.main - Cleaning up Jira resources...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutdown complete.
+INFO - mcp-atlassian.utils.lifecycle - Server stopped, flushing output streams...
+DEBUG - mcp-atlassian.utils.lifecycle - Output streams flushed, exiting gracefully
+2025-09-09T22:20:16.374092Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-09T22:20:16.388668Z  INFO rmcp::handler::server: client initialized
+2025-09-09T22:20:16.388688Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-09T22:20:16.507Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-09T22:20:16.508Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-09T22:20:16.508Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+DEBUG - mcp-atlassian - Logging level set to: DEBUG
+DEBUG - mcp-atlassian - Logging stream set to: stderr
+DEBUG - mcp-atlassian - Attempting to load environment from default .env file if it exists
+DEBUG - mcp-atlassian - Final transport determined: stdio
+DEBUG - mcp-atlassian - Final port for HTTP transports: 8000
+DEBUG - mcp-atlassian - Final host for HTTP transports: 0.0.0.0
+DEBUG - mcp-atlassian - Final path for Streamable HTTP: FastMCP default
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Confluence MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Jira MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Atlassian MCP'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+DEBUG - mcp-atlassian.utils.lifecycle - SIGPIPE handler registered
+DEBUG - mcp-atlassian - STDIO transport detected, setting up stdin monitoring
+DEBUG - mcp-atlassian - Starting asyncio event loop...
+DEBUG - asyncio - Using selector: EpollSelector
+[09/09/25 22:20:18] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+DEBUG - mcp_atlassian.utils.tools - ENABLED_TOOLS environment variable not set or empty.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+DEBUG - mcp.server.lowlevel.server - Received message: root=InitializedNotification(method='notifications/initialized', params=NotificationParams(meta=None), jsonrpc='2.0')
+2025-09-09T22:20:19.689741Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-09T22:20:19.699471Z  INFO rmcp::handler::server: client initialized
+2025-09-09T22:20:19.699557Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-09T22:20:19.717Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-09T22:20:19.717Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-09T22:20:19.718Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+DEBUG - mcp-atlassian - Logging level set to: DEBUG
+DEBUG - mcp-atlassian - Logging stream set to: stderr
+DEBUG - mcp-atlassian - Attempting to load environment from default .env file if it exists
+DEBUG - mcp-atlassian - Final transport determined: stdio
+DEBUG - mcp-atlassian - Final port for HTTP transports: 8000
+DEBUG - mcp-atlassian - Final host for HTTP transports: 0.0.0.0
+DEBUG - mcp-atlassian - Final path for Streamable HTTP: FastMCP default
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Confluence MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Jira MCP Service'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+DEBUG - mcp.server.lowlevel.server - Initializing server 'Atlassian MCP'
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListToolsRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for CallToolRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourcesRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ReadResourceRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for PromptListRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for GetPromptRequest
+DEBUG - mcp.server.lowlevel.server - Registering handler for ListResourceTemplatesRequest
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+DEBUG - mcp-atlassian.utils.lifecycle - SIGPIPE handler registered
+DEBUG - mcp-atlassian - STDIO transport detected, setting up stdin monitoring
+DEBUG - mcp-atlassian - Starting asyncio event loop...
+DEBUG - asyncio - Using selector: EpollSelector
+[09/09/25 22:20:21] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+DEBUG - mcp_atlassian.utils.tools - ENABLED_TOOLS environment variable not set or empty.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+DEBUG - mcp.server.lowlevel.server - Received message: root=InitializedNotification(method='notifications/initialized', params=NotificationParams(meta=None), jsonrpc='2.0')
+INFO:     Started server process [92490]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.

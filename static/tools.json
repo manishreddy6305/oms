@@ -1,0 +1,392 @@
+{
+  "tools": [
+    {
+      "toolSpec": {
+        "name": "execute_query",
+        "description": "Execute a SQL query against a Metabase database",
+        "inputSchema": {
+          "json": {
+            "type": "object",
+            "properties": {
+              "database_id": {
+                "type": "number",
+                "description": "ID of the database to query"
+              },
+              "query": {
+                "type": "string",
+                "description": "SQL query to execute"
+              }
+            },
+            "required": ["database_id", "query"]
+          }
+        }
+      }
+    },
+    {
+      "toolSpec": {
+        "name": "jira_add_comment",
+        "description": "Add a comment to a Jira issue.",
+        "inputSchema": {
+          "json": {
+            "type": "object",
+            "properties": {
+              "issue_key": {
+                "type": "string",
+                "description": "Jira issue key (e.g., 'PROJ-123')"
+              },
+              "comment": {
+                "type": "string",
+                "description": "Comment text in Markdown format"
+              }
+            },
+            "required": ["issue_key", "comment"]
+          }
+        }
+      }
+    },
+    {
+      "toolSpec": {
+        "name": "jira_get_issue",
+        "description": "Get details of a specific Jira issue including its Epic links and relationship information.",
+        "inputSchema": {
+          "json": {
+            "type": "object",
+            "properties": {
+              "issue_key": {
+                "type": "string",
+                "description": "Jira issue key (e.g., 'PROJ-123')",
+                "example": "PROJ-123"
+              },
+              "comment_limit": {
+                "type": "integer",
+                "description": "Maximum number of comments to include (0 or null for no comments)",
+                "default": null
+              },
+              "expand": {
+                "type": "string",
+                "description": "Optional fields to expand. Examples: 'renderedFields', 'transitions', 'changelog'"
+              },
+              "fields": {
+                "type": "string",
+                "description": "Optional comma-separated list of fields to return (e.g., 'summary,status,customfield_10010'). Use '*all' for all fields."
+              },
+              "properties": {
+                "type": "string",
+                "description": "Optional comma-separated list of issue properties to return"
+              },
+              "update_history": {
+                "type": "boolean",
+                "description": "Whether to update the issue view history for the requesting user",
+                "default": false
+              }
+            },
+            "required": ["issue_key"]
+          }
+        }
+      }
+    },
+    {
+      "toolSpec": {
+        "name": "jira_get_transitions",
+        "description": "Get available status transitions for a Jira issue.",
+        "inputSchema": {
+          "json": {
+            "type": "object",
+            "properties": {
+              "issue_key": {
+                "type": "string",
+                "description": "Jira issue key (e.g., 'PROJ-123')"
+              }
+            },
+            "required": ["issue_key"]
+          }
+        }
+      }
+    },
+    {
+      "toolSpec": {
+        "name": "jira_update_issue",
+        "description": "Update an existing Jira issue (status, fields, assignee, epic link, etc.).",
+        "inputSchema": {
+          "json": {
+            "type": "object",
+            "properties": {
+              "issue_key": {
+                "type": "string",
+                "description": "Jira issue key (e.g., 'PROJ-123')"
+              },
+              "fields": {
+                "type": "object",
+                "description": "Dictionary of fields to update (e.g., {\"assignee\": \"user@example.com\"})"
+              },
+              "additional_fields": {
+                "type": "object",
+                "description": "(Optional) Additional/custom fields to update"
+              },
+              "attachments": {
+                "type": "string",
+                "description": "(Optional) JSON string array or comma-separated list of file paths to attach"
+              }
+            },
+            "required": ["issue_key", "fields"]
+          }
+        }
+      }
+    },
+    {
+      "toolSpec": {
+        "name": "get_knowledge",
+        "description": "Fetches knowledge from predefined context files.",
+        "inputSchema": {
+          "json": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "The name of the knowledge file to fetch",
+                "enum": [
+                  "adobe_flow_info_and_debugging.md",
+                  "debugging_with_logs_detailed.md",
+                  "jira_playbook.md",
+                  "payzapp_flow_info_and_debugging.md"
+                ]
+              }
+            },
+            "required": ["name"]
+          }
+        }
+      }
+    },
+    {
+      "toolSpec": {
+        "name": "execute_elasticsearch_query",
+        "description": "Execute a search query against an Elasticsearch index using DSL to fetch and analyze the logs",
+        "inputSchema": {
+          "json": {
+            "type": "object",
+            "properties": {
+              "index": {
+                "type": "string",
+                "description": "Elasticsearch index name",
+                "enum": [
+                  "logs-service",
+                  "logs-*",
+                  "ingress-*"
+                ]
+              },
+              "body": {
+                "type": "object",
+                "description": "Elasticsearch query DSL body"
+              }
+            },
+            "required": ["index", "body"]
+          }
+        }
+      }
+    },
+    {
+      "toolSpec": {
+          "name": "esql",
+          "description": "Perform an Elasticsearch ES|QL query.",
+          "inputSchema": {
+              "json": {
+                  "$schema": "http://json-schema.org/draft-07/schema#",
+                  "title": "EsqlQueryParams",
+                  "type": "object",
+                  "properties": {
+                      "query": {
+                          "description": "Complete Elasticsearch ES|QL query",
+                          "type": "string"
+                      }
+                  },
+                  "required": [
+                      "query"
+                  ]
+              }
+          }
+      }
+    },
+    {
+      "toolSpec": {
+          "name": "get_mappings",
+          "description": "Get field mappings for a specific Elasticsearch index",
+          "inputSchema": {
+              "json": {
+                  "$schema": "http://json-schema.org/draft-07/schema#",
+                  "title": "GetMappingsParams",
+                  "type": "object",
+                  "properties": {
+                      "index": {
+                          "description": "Name of the Elasticsearch index to get mappings for",
+                          "type": "string",
+                          "enum": [
+                            "service-logs",
+                            "service-*"
+                          ]
+                      }
+                  },
+                  "required": [
+                      "index"
+                  ]
+              }
+          }
+      }
+    },
+    {
+      "toolSpec": {
+          "name": "create_issue",
+          "description": "Create a new issue in a GitHub repository.",
+          "inputSchema": {
+              "json": {
+                  "$schema": "http://json-schema.org/draft-07/schema#",
+                  "title": "CreateIssueParams",
+                  "type": "object",
+                  "properties": {
+                    "assignees": {
+                      "description": "Usernames to assign to this issue",
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "body": {
+                      "description": "Issue body content",
+                      "type": "string"
+                    },
+                    "labels": {
+                      "description": "Labels to apply to this issue",
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "milestone": {
+                      "description": "Milestone number",
+                      "type": "number"
+                    },
+                    "owner": {
+                      "description": "Repository owner",
+                      "type": "string"
+                    },
+                    "repo": {
+                      "description": "Repository name",
+                      "type": "string"
+                    },
+                    "title": {
+                      "description": "Issue title",
+                      "type": "string"
+                    }
+                  },    
+                  "required": [
+                    "owner",
+                    "repo",
+                    "title"
+                  ]
+              }
+          }
+      }
+    },
+    {
+      "toolSpec": {
+          "name": "assign_copilot_to_issue",
+          "description": "Assign Copilot to a specific issue in a GitHub repository.This tool can help with the following outcomes:- a Pull Request created with source code changes to resolve the issue More information can be found at: - https://docs.github.com/en/copilot/using-github-copilot/using-copilot-coding-agent-to-work-on-tasks/about-assigning-tasks-to-copilot",
+          "inputSchema": {
+              "json": {
+                  "$schema": "http://json-schema.org/draft-07/schema#",
+                  "title": "CreateIssueParams",
+                  "type": "object",
+                  "inputSchema": {
+                  "properties": {
+                    "issueNumber": {
+                      "description": "Issue number",
+                      "type": "number"
+                    },
+                    "owner": {
+                      "description": "Repository owner",
+                      "type": "string"
+                    },
+                    "repo": {
+                      "description": "Repository name",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "owner",
+                    "repo",
+                    "issueNumber"
+                  ]
+              }
+              }
+          }
+      }
+    },
+    {
+      "toolSpec": {
+          "name": "confluence_create_page",
+          "description": "Create a new Confluence page.",
+          "inputSchema": {
+              "json": {
+                  "$schema": "http://json-schema.org/draft-07/schema#",
+                  "title": "ConfluenceCreatePageParams",
+                  "type": "object",
+                  "properties": {
+                    "content": {
+                      "description": "The content of the page in Markdown format. Supports headings, lists, tables, code blocks, and other Markdown syntax",
+                        "type": "string"
+                    },
+                    "space_key": {
+                      "description": "The key of the space to create the page in (usually a short uppercase code like 'DEV', 'TEAM', or 'DOC')",
+                      "type": "string"
+                    },
+                    "title": {
+                      "description": "The title of the page",
+                      "type": "string"
+                    },
+                    "parent_id": {
+                      "description": "(Optional) parent page ID. If provided, this page will be created as a child of the specified page",
+                      "type": "string"
+                    }
+                  },    
+                  "required": [
+                    "content",
+                    "space_key",
+                    "title"
+                  ]
+              }
+          }
+      }
+    },
+    {
+      "toolSpec": {
+          "name": "confluence_update_page",
+          "description": "Update an existing Confluence page.",
+          "inputSchema": {
+              "json": {
+                  "$schema": "http://json-schema.org/draft-07/schema#",
+                  "title": "ConfluenceUpdatePageParams",
+                  "type": "object",
+                  "properties": {
+                    "content": {
+                      "description": "The new content of the page in Markdown format",
+                        "type": "string"
+                    },
+                    "title": {
+                      "description": "The new title of the page",
+                      "type": "string"
+                    },
+                    "page_id": {
+                      "description": "The ID of the page to update",
+                      "type": "string"
+                    }
+                  },    
+                  "required": [
+                    "content",
+                    "page_id",
+                    "title"
+                  ]
+              }
+          }
+      }
+    }
+  ]
+}

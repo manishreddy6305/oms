@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "OpenSearch Log Saver",
+  "description": "Capture currently visible logs from an OpenSearch (Dashboards) page and store them into local Elasticsearch (OpenSearch) running on localhost.",
+  "version": "0.1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Save visible logs"
+  },
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "tabs",
+    "downloads"
+  ],
+  "host_permissions": [
+    "https://localhost:9200/*",
+    "http://localhost:9200/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/_dashboards/app/discover*",
+        "https://*/app/discover*",
+        "https://*/_dashboards/app/logs*",
+        "https://*/app/logs*",
+        "https://*/_dashboards/app/observability-logs*"
+      ],
+      "js": ["contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

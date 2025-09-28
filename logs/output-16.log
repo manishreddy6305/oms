@@ -1,0 +1,139 @@
+2025-09-09T22:26:34.449541Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-09T22:26:34.460635Z  INFO rmcp::handler::server: client initialized
+2025-09-09T22:26:34.460684Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-09T22:26:34.554Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-09T22:26:34.554Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-09T22:26:34.555Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+[09/09/25 22:26:36] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+2025-09-09T22:26:37.812330Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+{"timestamp":"2025-09-09T22:26:37.812Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-09T22:26:37.815Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-09T22:26:37.816Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+2025-09-09T22:26:37.828715Z  INFO rmcp::handler::server: client initialized
+2025-09-09T22:26:37.828727Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+[09/09/25 22:26:39] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+INFO:     Will watch for changes in these directories: ['/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [93162] using StatReload
+cmd : ['docker', 'run', '-i', '--rm', '-e', 'ES_URL=https://host.docker.internal:9200', '-e', 'ES_API_KEY=djFYN0w1a0JVclJnNGRvdndxbWk6TzJ4dV9XZkpiRHB1S2RnTng1cGpCZw==', '-e', 'ES_SSL_SKIP_VERIFY=true', 'mcp/elasticsearch:latest', 'stdio']
+📨 Sent initialized notification
+cmd : ['docker', 'run', '-i', '--rm', '-e', 'ES_URL=https://host.docker.internal:9200', '-e', 'ES_API_KEY=djFYN0w1a0JVclJnNGRvdndxbWk6TzJ4dV9XZkpiRHB1S2RnTng1cGpCZw==', '-e', 'ES_SSL_SKIP_VERIFY=true', 'mcp/elasticsearch:latest', 'stdio']
+📨 Sent initialized notification
+2025-09-09T22:26:41.712951Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-09T22:26:41.728375Z  INFO rmcp::handler::server: client initialized
+2025-09-09T22:26:41.728455Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-09T22:26:41.809Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-09T22:26:41.811Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-09T22:26:41.811Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+[09/09/25 22:26:43] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+2025-09-09T22:26:45.014230Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-09T22:26:45.024155Z  INFO rmcp::handler::server: client initialized
+2025-09-09T22:26:45.024169Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-09T22:26:45.048Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-09T22:26:45.050Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-09T22:26:45.050Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+[09/09/25 22:26:46] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+INFO:     Started server process [93181]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+cmd : ['docker', 'run', '-i', '--rm', '-e', 'ES_URL=https://host.docker.internal:9200', '-e', 'ES_API_KEY=djFYN0w1a0JVclJnNGRvdndxbWk6TzJ4dV9XZkpiRHB1S2RnTng1cGpCZw==', '-e', 'ES_SSL_SKIP_VERIFY=true', 'mcp/elasticsearch:latest', 'stdio']
+📨 Sent initialized notification
+cmd : ['docker', 'run', '-i', '--rm', '-e', 'ES_URL=https://host.docker.internal:9200', '-e', 'ES_API_KEY=djFYN0w1a0JVclJnNGRvdndxbWk6TzJ4dV9XZkpiRHB1S2RnTng1cGpCZw==', '-e', 'ES_SSL_SKIP_VERIFY=true', 'mcp/elasticsearch:latest', 'stdio']
+📨 Sent initialized notification
+
+
+ModelReturned: f{"ResponseMetadata": {"RequestId": "5f25275a-d917-4818-87a1-eff5b0d015fb", "HTTPStatusCode": 200, "HTTPHeaders": {"date": "Tue, 09 Sep 2025 22:27:15 GMT", "content-type": "application/json", "content-length": "185", "connection": "keep-alive", "x-amzn-requestid": "5f25275a-d917-4818-87a1-eff5b0d015fb"}, "RetryAttempts": 0}, "output": {"message": {"role": "assistant", "content": [{"text": ""}]}}, "stopReason": "end_turn", "usage": {"inputTokens": 6508, "outputTokens": 0, "totalTokens": 6508}, "metrics": {"latencyMs": 1832}}
+INFO:     127.0.0.1:49694 - "POST /invoke HTTP/1.1" 200 OK
+{"timestamp":"2025-09-09T22:28:37.481Z","level":"info","message":"Shutting down server..."}
+INFO: Shutting down server...
+{"timestamp":"2025-09-09T22:28:37.495Z","level":"info","message":"Shutting down server..."}
+INFO: Shutting down server...
+{"timestamp":"2025-09-09T22:28:37.492Z","level":"info","message":"Shutting down server..."}
+INFO: Shutting down server...
+{"timestamp":"2025-09-09T22:28:37.514Z","level":"info","message":"Shutting down server..."}
+INFO: Shutting down server...
+INFO:     Shutting down
+INFO:     Finished server process [93181]
+INFO:     Stopping reloader process [93162]
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutting down...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutdown complete.
+INFO - mcp-atlassian.utils.lifecycle - Server stopped, flushing output streams...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutting down...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutdown complete.
+INFO - mcp-atlassian.utils.lifecycle - Server stopped, flushing output streams...
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting

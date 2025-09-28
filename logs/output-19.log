@@ -1,0 +1,457 @@
+    2025-09-10T19:20:12.896930Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-10T19:20:12.922546Z  INFO rmcp::handler::server: client initialized
+2025-09-10T19:20:12.922580Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-10T19:20:13.040Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-10T19:20:13.043Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-10T19:20:13.044Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+[09/10/25 19:20:14] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+2025-09-10T19:20:16.241036Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-10T19:20:16.251538Z  INFO rmcp::handler::server: client initialized
+2025-09-10T19:20:16.251576Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-10T19:20:16.321Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-10T19:20:16.322Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-10T19:20:16.322Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+[09/10/25 19:20:17] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+INFO:     Will watch for changes in these directories: ['/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [53804] using StatReload
+cmd : ['docker', 'run', '-i', '--rm', '-e', 'ES_URL=https://host.docker.internal:9200', '-e', 'ES_API_KEY=djFYN0w1a0JVclJnNGRvdndxbWk6TzJ4dV9XZkpiRHB1S2RnTng1cGpCZw==', '-e', 'ES_SSL_SKIP_VERIFY=true', 'mcp/elasticsearch:latest', 'stdio']
+📨 Sent initialized notification
+cmd : ['docker', 'run', '-i', '--rm', '-e', 'ES_URL=https://host.docker.internal:9200', '-e', 'ES_API_KEY=djFYN0w1a0JVclJnNGRvdndxbWk6TzJ4dV9XZkpiRHB1S2RnTng1cGpCZw==', '-e', 'ES_SSL_SKIP_VERIFY=true', 'mcp/elasticsearch:latest', 'stdio']
+📨 Sent initialized notification
+2025-09-10T19:20:20.208777Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-10T19:20:20.219237Z  INFO rmcp::handler::server: client initialized
+2025-09-10T19:20:20.219287Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-10T19:20:20.288Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-10T19:20:20.288Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-10T19:20:20.289Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+[09/10/25 19:20:21] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+2025-09-10T19:20:23.534333Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-10T19:20:23.545502Z  INFO rmcp::handler::server: client initialized
+2025-09-10T19:20:23.545511Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-10T19:20:23.690Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-10T19:20:23.691Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-10T19:20:23.691Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+[09/10/25 19:20:25] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+INFO:     Started server process [53828]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO - mcp.server.lowlevel.server - Processing request of type CallToolRequest
+{"timestamp":"2025-09-10T19:21:16.672Z","level":"info","message":"Calling tool...","data":{"tool":"execute_query"}}
+INFO: Calling tool...
+{"timestamp":"2025-09-10T19:21:26.292Z","level":"info","message":"Calling tool...","data":{"tool":"execute_query"}}
+INFO: Calling tool...
+cmd : ['docker', 'run', '-i', '--rm', '-e', 'ES_URL=https://host.docker.internal:9200', '-e', 'ES_API_KEY=djFYN0w1a0JVclJnNGRvdndxbWk6TzJ4dV9XZkpiRHB1S2RnTng1cGpCZw==', '-e', 'ES_SSL_SKIP_VERIFY=true', 'mcp/elasticsearch:latest', 'stdio']
+📨 Sent initialized notification
+cmd : ['docker', 'run', '-i', '--rm', '-e', 'ES_URL=https://host.docker.internal:9200', '-e', 'ES_API_KEY=djFYN0w1a0JVclJnNGRvdndxbWk6TzJ4dV9XZkpiRHB1S2RnTng1cGpCZw==', '-e', 'ES_SSL_SKIP_VERIFY=true', 'mcp/elasticsearch:latest', 'stdio']
+📨 Sent initialized notification
+
+
+ModelReturned: f{"ResponseMetadata": {"RequestId": "8ef68ef9-4723-42cf-8485-cfe1d1db2d08", "HTTPStatusCode": 200, "HTTPHeaders": {"date": "Wed, 10 Sep 2025 19:21:04 GMT", "content-type": "application/json", "content-length": "1228", "connection": "keep-alive", "x-amzn-requestid": "8ef68ef9-4723-42cf-8485-cfe1d1db2d08"}, "RetryAttempts": 0}, "output": {"message": {"role": "assistant", "content": [{"text": "<thinking>\nThe user has requested to resolve Jira ticket TRC-28931 by reading its summary/description and providing required details. Since this is an onboarding/card management issue, I need to follow the debugging steps:\n\n1. First gather ticket details using jira_get_issue to understand the problem\n2. Extract customer identifiers from ticket description\n3. Check if application ID exists in description - if not, need to find it\n4. Verify journey (Adobe/Payzapp) using spool_id from application table\n5. Analyze provisioning failure details from application_stage table\n\nSince I don't have application ID yet, the first logical step is to retrieve the Jira ticket details to get customer identifiers and any mentioned application IDs. This will help determine the next database queries needed to investigate the provisioning failure.\n</thinking>\n\n"}, {"toolUse": {"toolUseId": "tooluse_Upz9MbC6RTevRwLQqnf7NQ", "name": "jira_get_issue", "input": {"issue_key": "TRC-28931", "expand": "transitions", "fields": "summary,description,status"}}}]}}, "stopReason": "tool_use", "usage": {"inputTokens": 4757, "outputTokens": 218, "totalTokens": 4975}, "metrics": {"latencyMs": 8460}}
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'jira_get_issue', 'params': {'issue_key': 'TRC-28931', 'expand': 'transitions', 'fields': 'summary,description,status'}}
+MCPROUTER: Execued tool with command: {"tool_name": "jira_get_issue", "params": {"issue_key": "TRC-28931", "expand": "transitions", "fields": "summary,description,status"}} 
+and result
+{"id": "1940375", "key": "TRC-28931", "summary": "[TEST]Application Stuck in Provisioning Stage. Not progressing. Unable to get the card.", "description": "phone_number:  6391720991", "status": {"name": "To Do", "category": "To Do", "color": "blue-gray"}, "priority": {"name": "P5"}, "assignee": {"display_name": "Unassigned"}, "reporter": {"display_name": "Omkar Amilkanthwar", "name": "Omkar Amilkanthwar", "email": "omkaram@zeta.tech", "avatar_url": "https://secure.gravatar.com/avatar/5e3de20ccb2490520f2c27945334e50b?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOA-6.png"}, "created": "2025-09-10T03:06:38.894+0530", "updated": "2025-09-11T00:46:06.838+0530"}
+
+
+
+
+ModelReturned: f{"ResponseMetadata": {"RequestId": "3186c02d-91d6-48ad-b53e-b4c4af3f4ac6", "HTTPStatusCode": 200, "HTTPHeaders": {"date": "Wed, 10 Sep 2025 19:21:17 GMT", "content-type": "application/json", "content-length": "1265", "connection": "keep-alive", "x-amzn-requestid": "3186c02d-91d6-48ad-b53e-b4c4af3f4ac6"}, "RetryAttempts": 0}, "output": {"message": {"role": "assistant", "content": [{"text": "<thinking>\nThe Jira ticket TRC-28931 reports an application stuck in the provisioning stage. The customer identifier provided is phone_number: 6391720991. To proceed with debugging:\n\n1. Need to find the application ID using the phone number from the contactDetails section\n2. Validate the application's current status and provisioning stage details\n3. Check provisioning failure reasons in application_stage table\n\nSince phone numbers are stored in contactDetails.phoneNumber field (per schema documentation), I'll query the application_section table to find the associated application ID. Using database_id=7 as specified in the schema and limiting to 1 record to comply with query guidelines.\n</thinking>\n\n"}, {"toolUse": {"toolUseId": "tooluse_Qwd3793mQkaBHxPztB5LTw", "name": "execute_query", "input": {"database_id": 7, "query": "SELECT a.id AS application_id, a.status, a.spool_id FROM application a JOIN application_section s ON a.id = s.application_id WHERE s.name = 'contactDetails' AND s.details->>'phoneNumber' = '+916391720991' ORDER BY a.created_at DESC LIMIT 1;"}}}]}}, "stopReason": "tool_use", "usage": {"inputTokens": 5326, "outputTokens": 267, "totalTokens": 5593}, "metrics": {"latencyMs": 10285}}
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'execute_query', 'params': {'database_id': 7, 'query': "SELECT a.id AS application_id, a.status, a.spool_id FROM application a JOIN application_section s ON a.id = s.application_id WHERE s.name = 'contactDetails' AND s.details->>'phoneNumber' = '+916391720991' ORDER BY a.created_at DESC LIMIT 1;"}}
+MCPROUTER: Execued tool with command: {"tool_name": "execute_query", "params": {"database_id": 7, "query": "SELECT a.id AS application_id, a.status, a.spool_id FROM application a JOIN application_section s ON a.id = s.application_id WHERE s.name = 'contactDetails' AND s.details->>'phoneNumber' = '+916391720991' ORDER BY a.created_at DESC LIMIT 1;"}} 
+and result
+[{"application_id": "8ba9296d-32b5-4b22-a9f5-cbc1e5cc69d4", "status": "PROVISIONING_INITIATED", "spool_id": "59dc2abf-7dcc-45d9-81de-29f8b17e5942"}]
+
+
+
+
+ModelReturned: f{"ResponseMetadata": {"RequestId": "d0acaf8e-dedf-42bc-a01b-cac39d32803b", "HTTPStatusCode": 200, "HTTPHeaders": {"date": "Wed, 10 Sep 2025 19:21:27 GMT", "content-type": "application/json", "content-length": "1076", "connection": "keep-alive", "x-amzn-requestid": "d0acaf8e-dedf-42bc-a01b-cac39d32803b"}, "RetryAttempts": 0}, "output": {"message": {"role": "assistant", "content": [{"text": "<thinking>\nThe application ID 8ba9296d-32b5-4b22-a9f5-cbc1e5cc69d4 is associated with the Adobe flow (spool_id matches known Adobe spool). The current status is PROVISIONING_INITIATED but the ticket reports failure. Need to:\n\n1. Check provisioning stage details to understand failure reasons\n2. Verify DATA_CAPTURE stage completion status\n3. Examine application_stage entries for failure codes/descriptions\n\nSince provisioning failures would be recorded in application_stage with status=FAILED, I'll query for stages related to this application ID to get error details.\n</thinking> "}, {"toolUse": {"toolUseId": "tooluse_-Wrqw7FjSjOijgywPTDhxw", "name": "execute_query", "input": {"database_id": 7, "query": "SELECT name, status, result, details, reason_code, reason_description FROM application_stage WHERE application_id = '8ba9296d-32b5-4b22-a9f5-cbc1e5cc69d4' ORDER BY created_at DESC;"}}}]}}, "stopReason": "tool_use", "usage": {"inputTokens": 5712, "outputTokens": 238, "totalTokens": 5950}, "metrics": {"latencyMs": 8063}}
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'execute_query', 'params': {'database_id': 7, 'query': "SELECT name, status, result, details, reason_code, reason_description FROM application_stage WHERE application_id = '8ba9296d-32b5-4b22-a9f5-cbc1e5cc69d4' ORDER BY created_at DESC;"}}
+MCPROUTER: Execued tool with command: {"tool_name": "execute_query", "params": {"database_id": 7, "query": "SELECT name, status, result, details, reason_code, reason_description FROM application_stage WHERE application_id = '8ba9296d-32b5-4b22-a9f5-cbc1e5cc69d4' ORDER BY created_at DESC;"}} 
+and result
+[{"name": "PROVISIONING", "status": "INITIATED", "result": "{\"validationPassed\": {\"validation\": \"successful\"}}", "details": "{\"bundle\": {\"status\": \"COMPLETED\", \"accounts\": [{\"id\": \"98a88efa-00a4-4e69-bce8-428dfb403fbf\"}], \"bundleId\": \"f339f128-2260-4e99-a1be-5519be2c4006\", \"issuanceId\": \"c6aad082-b38e-4809-8ca9-af0c2c461abf\"}, \"authProfile\": {\"status\": \"COMPLETED\", \"authProfileId\": \"O6urV_920h4uGVHOwEVlCw==\"}, \"dedupeResult\": {\"reason\": \"\", \"result\": [], \"status\": \"SUCCESS\"}, \"accountHolder\": {\"id\": \"c980edcf-7a21-4dcc-a844-bd46747ac4a6\", \"status\": \"COMPLETED\", \"authProfileId\": \"O6urV_920h4uGVHOwEVlCw==\"}, \"existingAccounts\": []}", "reason_code": "TECHNICAL_FAILURES", "reason_description": "AetherException::AE4144"}, {"name": "DATA_CAPTURE", "status": "COMPLETED", "result": "{\"validationPassed\": {\"validation\": \"successful\"}}", "details": "{}", "reason_code": null, "reason_description": null}]
+
+INFO - mcp.server.lowlevel.server - Processing request of type CallToolRequest
+INFO - mcp.server.lowlevel.server - Processing request of type CallToolRequest
+ERROR - mcp-jira - Error updating issue TRC-28931: 'dict' object has no attribute 'startswith'
+ERROR - mcp_atlassian.servers.jira - Error updating issue TRC-28931: Failed to update issue TRC-28931: 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.10/site-packages/mcp_atlassian/jira/issues.py", line 1043, in update_issue
+    account_id = self._get_account_id(value)
+  File "/app/.venv/lib/python3.10/site-packages/mcp_atlassian/jira/users.py", line 105, in _get_account_id
+    if assignee.startswith("5") and len(assignee) >= 10:
+AttributeError: 'dict' object has no attribute 'startswith'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.10/site-packages/mcp_atlassian/servers/jira.py", line 940, in update_issue
+    issue = jira.update_issue(issue_key=issue_key, **all_updates)
+  File "/app/.venv/lib/python3.10/site-packages/mcp_atlassian/jira/issues.py", line 1094, in update_issue
+    raise ValueError(f"Failed to update issue {issue_key}: {error_msg}") from e
+ValueError: Failed to update issue TRC-28931: 'dict' object has no attribute 'startswith'
+[09/10/25 19:21:59] ERROR    Error calling tool              tool_manager.py:129
+                             'update_issue': Failed to                          
+                             update issue TRC-28931: Failed                     
+                             to update issue TRC-28931:                         
+                             'dict' object has no attribute                     
+                             'startswith'                                       
+                             ╭─ Traceback (most recent cal─╮                    
+                             │ /app/.venv/lib/python3.10/s │                    
+                             │ ite-packages/mcp_atlassian/ │                    
+                             │ jira/issues.py:1043 in      │                    
+                             │ update_issue                │                    
+                             │                             │                    
+                             │   1040 │   │   │   │   │    │                    
+                             │   1041 │   │   │   │   │    │                    
+                             │   1042 │   │   │   │   │    │                    
+                             │ ❱ 1043 │   │   │   │   │    │                    
+                             │   1044 │   │   │   │   │    │                    
+                             │   1045 │   │   │   │   │    │                    
+                             │   1046 │   │   │   │   │    │                    
+                             │                             │                    
+                             │ /app/.venv/lib/python3.10/s │                    
+                             │ ite-packages/mcp_atlassian/ │                    
+                             │ jira/users.py:105 in        │                    
+                             │ _get_account_id             │                    
+                             │                             │                    
+                             │   102 │   │   │   ValueErro │                    
+                             │   103 │   │   """           │                    
+                             │   104 │   │   # If it looks │                    
+                             │ ❱ 105 │   │   if assignee.s │                    
+                             │   106 │   │   │   return as │                    
+                             │   107 │   │                 │                    
+                             │   108 │   │   account_id =  │                    
+                             ╰─────────────────────────────╯                    
+                             AttributeError: 'dict' object                      
+                             has no attribute 'startswith'                      
+                                                                                
+                             The above exception was the                        
+                             direct cause of the following                      
+                             exception:                                         
+                                                                                
+                             ╭─ Traceback (most recent cal─╮                    
+                             │ /app/.venv/lib/python3.10/s │                    
+                             │ ite-packages/mcp_atlassian/ │                    
+                             │ servers/jira.py:940 in      │                    
+                             │ update_issue                │                    
+                             │                             │                    
+                             │    937 │   │   all_updates[ │                    
+                             │    938 │                    │                    
+                             │    939 │   try:             │                    
+                             │ ❱  940 │   │   issue = jira │                    
+                             │    941 │   │   result = iss │                    
+                             │    942 │   │   if (         │                    
+                             │    943 │   │   │   hasattr( │                    
+                             │                             │                    
+                             │ /app/.venv/lib/python3.10/s │                    
+                             │ ite-packages/mcp_atlassian/ │                    
+                             │ jira/issues.py:1094 in      │                    
+                             │ update_issue                │                    
+                             │                             │                    
+                             │   1091 │   │   except Excep │                    
+                             │   1092 │   │   │   error_ms │                    
+                             │   1093 │   │   │   logger.e │                    
+                             │ ❱ 1094 │   │   │   raise Va │                    
+                             │   1095 │                    │                    
+                             │   1096 │   def _update_issu │                    
+                             │   1097 │   │   self, issue_ │                    
+                             ╰─────────────────────────────╯                    
+                             ValueError: Failed to update                       
+                             issue TRC-28931: 'dict' object                     
+                             has no attribute 'startswith'                      
+                                                                                
+                             During handling of the above                       
+                             exception, another exception                       
+                             occurred:                                          
+                                                                                
+                             ╭─ Traceback (most recent cal─╮                    
+                             │ /app/.venv/lib/python3.10/s │                    
+                             │ ite-packages/fastmcp/tools/ │                    
+                             │ tool_manager.py:120 in      │                    
+                             │ call_tool                   │                    
+                             │                             │                    
+                             │   117 │   │   │   raise Not │                    
+                             │   118 │   │                 │                    
+                             │   119 │   │   try:          │                    
+                             │ ❱ 120 │   │   │   return aw │                    
+                             │   121 │   │                 │                    
+                             │   122 │   │   # raise ToolE │                    
+                             │   123 │   │   except ToolEr │                    
+                             │                             │                    
+                             │ /app/.venv/lib/python3.10/s │                    
+                             │ ite-packages/fastmcp/tools/ │                    
+                             │ tool.py:144 in run          │                    
+                             │                             │                    
+                             │   141 │   │   type_adapter  │                    
+                             │   142 │   │   result = type │                    
+                             │   143 │   │   if inspect.is │                    
+                             │ ❱ 144 │   │   │   result =  │                    
+                             │   145 │   │                 │                    
+                             │   146 │   │   return _conve │                    
+                             │   147                       │                    
+                             │                             │                    
+                             │ /app/.venv/lib/python3.10/s │                    
+                             │ ite-packages/mcp_atlassian/ │                    
+                             │ utils/decorators.py:42 in   │                    
+                             │ wrapper                     │                    
+                             │                             │                    
+                             │    39 │   │   │   logger.wa │                    
+                             │    40 │   │   │   raise Val │                    
+                             │    41 │   │                 │                    
+                             │ ❱  42 │   │   return await  │                    
+                             │    43 │                     │                    
+                             │    44 │   return wrapper  # │                    
+                             │    45                       │                    
+                             │                             │                    
+                             │ /app/.venv/lib/python3.10/s │                    
+                             │ ite-packages/mcp_atlassian/ │                    
+                             │ servers/jira.py:954 in      │                    
+                             │ update_issue                │                    
+                             │                             │                    
+                             │    951 │   │   )            │                    
+                             │    952 │   except Exception │                    
+                             │    953 │   │   logger.error │                    
+                             │ ❱  954 │   │   raise ValueE │                    
+                             │    955                      │                    
+                             │    956                      │                    
+                             │    957 @jira_mcp.tool(tags= │                    
+                             ╰─────────────────────────────╯                    
+                             ValueError: Failed to update                       
+                             issue TRC-28931: Failed to                         
+                             update issue TRC-28931: 'dict'                     
+                             object has no attribute                            
+                             'startswith'                                       
+ERROR - FastMCP.fastmcp.tools.tool_manager - Error calling tool 'update_issue': Failed to update issue TRC-28931: Failed to update issue TRC-28931: 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.10/site-packages/mcp_atlassian/jira/issues.py", line 1043, in update_issue
+    account_id = self._get_account_id(value)
+  File "/app/.venv/lib/python3.10/site-packages/mcp_atlassian/jira/users.py", line 105, in _get_account_id
+    if assignee.startswith("5") and len(assignee) >= 10:
+AttributeError: 'dict' object has no attribute 'startswith'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.10/site-packages/mcp_atlassian/servers/jira.py", line 940, in update_issue
+    issue = jira.update_issue(issue_key=issue_key, **all_updates)
+  File "/app/.venv/lib/python3.10/site-packages/mcp_atlassian/jira/issues.py", line 1094, in update_issue
+    raise ValueError(f"Failed to update issue {issue_key}: {error_msg}") from e
+ValueError: Failed to update issue TRC-28931: 'dict' object has no attribute 'startswith'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.10/site-packages/fastmcp/tools/tool_manager.py", line 120, in call_tool
+    return await tool.run(arguments)
+  File "/app/.venv/lib/python3.10/site-packages/fastmcp/tools/tool.py", line 144, in run
+    result = await result
+  File "/app/.venv/lib/python3.10/site-packages/mcp_atlassian/utils/decorators.py", line 42, in wrapper
+    return await func(ctx, *args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/mcp_atlassian/servers/jira.py", line 954, in update_issue
+    raise ValueError(f"Failed to update issue {issue_key}: {str(e)}")
+ValueError: Failed to update issue TRC-28931: Failed to update issue TRC-28931: 'dict' object has no attribute 'startswith'
+
+
+
+ModelReturned: f{"ResponseMetadata": {"RequestId": "d7d0fa33-b840-404e-862f-790bb59f278c", "HTTPStatusCode": 200, "HTTPHeaders": {"date": "Wed, 10 Sep 2025 19:21:48 GMT", "content-type": "application/json", "content-length": "1902", "connection": "keep-alive", "x-amzn-requestid": "d7d0fa33-b840-404e-862f-790bb59f278c"}, "RetryAttempts": 0}, "output": {"message": {"role": "assistant", "content": [{"text": "<thinking>\nThe provisioning stage shows status=INITIATED but the ticket reports failure. The reason_code \"TECHNICAL_FAILURES\" with description \"AetherException::AE4144\" indicates a technical error during provisioning. Key findings:\n\n1. Application is in Adobe flow (spool_id matches)\n2. Provisioning stage stuck despite INITIATED status\n3. Technical failure related to Aether service\n\nNext steps:\n- Confirm failure details in Elasticsearch logs\n- Check provisioning subsystem statuses\n- Follow Adobe debugging playbook for AE4144 errors\n\nBut first, need to add initial findings to Jira ticket as per requirements before escalating. Will report provisioning failure reason and subsystem statuses from application_stage details.\n</thinking> "}, {"toolUse": {"toolUseId": "tooluse_C4DwIYGIQGWoZEUan29dcA", "name": "jira_add_comment", "input": {"issue_key": "TRC-28931", "comment": "**Application Investigation Summary:**\n\n- **Application ID:** 8ba9296d-32b5-4b22-a9f5-cbc1e5cc69d4\n- **Journey:** Adobe flow (spool_id: 59dc2abf-7dcc-45d9-81de-29f8b17e5942)\n- **Current Status:** PROVISIONING_INITIATED\n\n**Provisioning Stage Details:**\n- Status: INITIATED (stuck)\n- Technical Failure: `AetherException::AE4144` (TECHNICAL_FAILURES)\n- Bundle creation: COMPLETED (bundleId: f339f128-2260-4e99-a1be-5519be2c4006)\n- AuthProfile: COMPLETED (O6urV_920h4uGVHOwEVlCw==)\n- Account Holder: COMPLETED\n\n**Next Steps:**\n1. Check Aether service logs for error AE4144\n2. Verify card issuance status (issuanceId: c6aad082-b38e-4809-8ca9-af0c2c461abf)\n3. Follow Adobe provisioning failure playbook\n\n**Recommendation:** Escalate to @omkaram for technical team investigation. Potential Aether integration issue."}}}]}}, "stopReason": "tool_use", "usage": {"inputTokens": 6393, "outputTokens": 534, "totalTokens": 6927}, "metrics": {"latencyMs": 19981}}
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'jira_add_comment', 'params': {'issue_key': 'TRC-28931', 'comment': '**Application Investigation Summary:**\n\n- **Application ID:** 8ba9296d-32b5-4b22-a9f5-cbc1e5cc69d4\n- **Journey:** Adobe flow (spool_id: 59dc2abf-7dcc-45d9-81de-29f8b17e5942)\n- **Current Status:** PROVISIONING_INITIATED\n\n**Provisioning Stage Details:**\n- Status: INITIATED (stuck)\n- Technical Failure: `AetherException::AE4144` (TECHNICAL_FAILURES)\n- Bundle creation: COMPLETED (bundleId: f339f128-2260-4e99-a1be-5519be2c4006)\n- AuthProfile: COMPLETED (O6urV_920h4uGVHOwEVlCw==)\n- Account Holder: COMPLETED\n\n**Next Steps:**\n1. Check Aether service logs for error AE4144\n2. Verify card issuance status (issuanceId: c6aad082-b38e-4809-8ca9-af0c2c461abf)\n3. Follow Adobe provisioning failure playbook\n\n**Recommendation:** Escalate to @omkaram for technical team investigation. Potential Aether integration issue.'}}
+MCPROUTER: Execued tool with command: {"tool_name": "jira_add_comment", "params": {"issue_key": "TRC-28931", "comment": "**Application Investigation Summary:**\n\n- **Application ID:** 8ba9296d-32b5-4b22-a9f5-cbc1e5cc69d4\n- **Journey:** Adobe flow (spool_id: 59dc2abf-7dcc-45d9-81de-29f8b17e5942)\n- **Current Status:** PROVISIONING_INITIATED\n\n**Provisioning Stage Details:**\n- Status: INITIATED (stuck)\n- Technical Failure: `AetherException::AE4144` (TECHNICAL_FAILURES)\n- Bundle creation: COMPLETED (bundleId: f339f128-2260-4e99-a1be-5519be2c4006)\n- AuthProfile: COMPLETED (O6urV_920h4uGVHOwEVlCw==)\n- Account Holder: COMPLETED\n\n**Next Steps:**\n1. Check Aether service logs for error AE4144\n2. Verify card issuance status (issuanceId: c6aad082-b38e-4809-8ca9-af0c2c461abf)\n3. Follow Adobe provisioning failure playbook\n\n**Recommendation:** Escalate to @omkaram for technical team investigation. Potential Aether integration issue."}} 
+and result
+{"id": "2577650", "body": "**Application Investigation Summary:**\n  - **Application ID:* 8ba9296d-32b5-4b22-a9f5-cbc1e5cc69d4\n  - **Journey:* Adobe flow (spool_id: 59dc2abf-7dcc-45d9-81de-29f8b17e5942)\n  - **Current Status:* PROVISIONING_INITIATED\n\n**Provisioning Stage Details:**\n- Status: INITIATED (stuck)\n- Technical Failure: `AetherException::AE4144` (TECHNICAL_FAILURES)\n- Bundle creation: COMPLETED (bundleId: f339f128-2260-4e99-a1be-5519be2c4006)\n- AuthProfile: COMPLETED (O6urV_920h4uGVHOwEVlCw==)\n- Account Holder: COMPLETED\n\n**Next Steps:**\n1. Check Aether service logs for error AE4144\n2. Verify card issuance status (issuanceId: c6aad082-b38e-4809-8ca9-af0c2c461abf)\n3. Follow Adobe provisioning failure playbook\n\n**Recommendation:** Escalate to @omkaram for technical team investigation. Potential Aether integration issue.", "created": "2025-09-11 00:51:49.831000+05:30", "author": "Omkar Amilkanthwar"}
+
+
+
+
+ModelReturned: f{"ResponseMetadata": {"RequestId": "0c80a994-d1f9-47b2-8c36-3322bb308d63", "HTTPStatusCode": 200, "HTTPHeaders": {"date": "Wed, 10 Sep 2025 19:22:00 GMT", "content-type": "application/json", "content-length": "1336", "connection": "keep-alive", "x-amzn-requestid": "0c80a994-d1f9-47b2-8c36-3322bb308d63"}, "RetryAttempts": 0}, "output": {"message": {"role": "assistant", "content": [{"text": "<thinking>\nAfter analyzing the ticket and database records:\n1. Application is in Adobe flow with valid provisioning stage data\n2. Technical failure identified as AetherException::AE4144\n3. Key provisioning components (bundle/auth) show completion\n4. Issue requires technical team intervention per playbook\n\nNext required actions:\n- Assign to onboarding POC @omkaram as per technical failure handling\n- Update status to \"In Progress\" since investigation completed\n- No need for Elasticsearch logs yet as error code is definitive\n\nFinal steps:\n- Post summary findings\n- Move ticket to POC assignment\n- Follow standard escalation procedure\n</thinking>\n"}, {"toolUse": {"toolUseId": "tooluse_tjCwN5j4RpOwWJoxYx8VaQ", "name": "jira_update_issue", "input": {"issue_key": "TRC-28931", "fields": {"assignee": {"id": "63a68c4a4c49b00068e8f2a6"}, "status": "In Progress"}}}}, {"toolUse": {"toolUseId": "tooluse_rlVGTyLPRayXh7HTyy6JYw", "name": "jira_add_comment", "input": {"issue_key": "TRC-28931", "comment": "Investigation complete. Application stuck due to technical error AE4144 in Aether service integration. Assigned to @omkaram for technical resolution."}}}]}}, "stopReason": "tool_use", "usage": {"inputTokens": 7369, "outputTokens": 261, "totalTokens": 7630}, "metrics": {"latencyMs": 10577}}
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'jira_update_issue', 'params': {'issue_key': 'TRC-28931', 'fields': {'assignee': {'id': '63a68c4a4c49b00068e8f2a6'}, 'status': 'In Progress'}}}
+INFO:     127.0.0.1:54144 - "POST /invoke HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/fastapi/routing.py", line 302, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/fastapi/routing.py", line 215, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/starlette/concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 2476, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/venv/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/server/app.py", line 40, in orchestrate
+    process(issue_key, seed)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/converse_style_orchestrator.py", line 108, in process
+    tool_result_msg = handle_tool_use(tool_use_block)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/converse_style_orchestrator.py", line 34, in handle_tool_use
+    result = mcp_router.execute_tool(
+            {
+    ...<2 lines>...
+            }
+    )
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/mcp_router.py", line 66, in execute_tool
+    res = self.jira_update_issue(params)
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/mcp_router.py", line 149, in jira_update_issue
+    return self.jira_client.jira_update_issue(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        issue_key=issue_key,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        attachments=attachments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms/jira_mcp_client/client.py", line 207, in jira_update_issue
+    return json.loads(raw_text)
+           ~~~~~~~~~~^^^^^^^^^^
+  File "/Users/omkaram/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/omkaram/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omkaram/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (charWARNING:  StatReload detected changes in 'objects/run.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [53828]
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting
+
+got 3 SIGTERM/SIGINTs, forcefully exiting

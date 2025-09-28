@@ -1,0 +1,177 @@
+2025-09-13T18:54:22.450723Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-13T18:54:22.462220Z  INFO rmcp::handler::server: client initialized
+2025-09-13T18:54:22.462240Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-13T18:54:22.560Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-13T18:54:22.561Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-13T18:54:22.561Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+[09/13/25 18:54:24] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+GitHub MCP Server running on stdio
+INFO:     Will watch for changes in these directories: ['/Users/omkaram/Desktop/zeta_repos/github_repos/zeta-hacks-oms']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [61993] using StatReload
+📨 Sent initialized notification
+📨 Sent initialized notification
+2025-09-13T18:54:26.528046Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-13T18:54:26.543479Z  INFO rmcp::handler::server: client initialized
+2025-09-13T18:54:26.543502Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+{"timestamp":"2025-09-13T18:54:26.621Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-13T18:54:26.622Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-13T18:54:26.623Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+[09/13/25 18:54:28] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+GitHub MCP Server running on stdio
+INFO:     Started server process [62013]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+{"timestamp":"2025-09-13T18:55:00.157Z","level":"info","message":"Calling tool...","data":{"tool":"execute_query"}}
+INFO: Calling tool...
+📨 Sent initialized notification
+📨 Sent initialized notification
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'execute_query', 'params': {'database_id': 7, 'query': "SELECT spool_id FROM application WHERE id = '2c831ee8-80f3-42ff-94ba-dc0b41aad205' ORDER BY created_at DESC LIMIT 1"}}
+MCPROUTER: Execued tool with command: {"tool_name": "execute_query", "params": {"database_id": 7, "query": "SELECT spool_id FROM application WHERE id = '2c831ee8-80f3-42ff-94ba-dc0b41aad205' ORDER BY created_at DESC LIMIT 1"}} 
+and result
+[]
+
+
+INFO:     127.0.0.1:61486 - "POST /invoke HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'helper_scripts/insert_app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [62013]
+2025-09-13T18:57:00.665706Z  INFO rmcp::service: input stream terminated
+2025-09-13T18:57:00.665878Z  INFO rmcp::service: serve finished quit_reason=Closed
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutting down...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutdown complete.
+INFO - mcp-atlassian.utils.lifecycle - Server stopped, flushing output streams...
+{"timestamp":"2025-09-13T18:57:01.692Z","level":"info","message":"Using Metabase API Key for authentication."}
+INFO: Using Metabase API Key for authentication.
+{"timestamp":"2025-09-13T18:57:01.693Z","level":"info","message":"Starting Metabase MCP server..."}
+INFO: Starting Metabase MCP server...
+{"timestamp":"2025-09-13T18:57:01.693Z","level":"info","message":"Metabase MCP server running on stdio"}
+INFO: Metabase MCP server running on stdio
+2025-09-13T18:57:01.728027Z  INFO elasticsearch_core_mcp_server: Starting MCP server
+2025-09-13T18:57:01.738654Z  INFO rmcp::handler::server: client initialized
+2025-09-13T18:57:01.738674Z  INFO serve_inner: rmcp::service: Service initialized as server peer_info=Some(InitializeRequestParam { protocol_version: ProtocolVersion("0.1"), capabilities: ClientCapabilities { experimental: None, roots: None, sampling: None }, client_info: Implementation { name: "es-mcp-client", version: "1.0.0" } })
+INFO - mcp-atlassian.server.main - Added /healthz endpoint for Kubernetes probes
+INFO - mcp-atlassian - Starting server with STDIO transport.
+[09/13/25 18:57:03] INFO     Starting MCP server 'Atlassian MCP'   server.py:734
+                             with transport 'stdio'                             
+INFO - FastMCP.fastmcp.server.server - Starting MCP server 'Atlassian MCP' with transport 'stdio'
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan starting...
+INFO - mcp-atlassian.utils.environment - Using Jira Cloud Basic Authentication (API Token)
+INFO - mcp-atlassian.utils.environment - Confluence is not configured or required environment variables are missing.
+INFO - mcp-atlassian.server.main - Jira configuration loaded and authentication is configured.
+INFO - mcp-atlassian.server.main - Read-only mode: DISABLED
+INFO - mcp-atlassian.server.main - Enabled tools filter: All tools enabled
+GitHub MCP Server running on stdio
+INFO:     Started server process [62241]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+{"timestamp":"2025-09-13T18:57:41.066Z","level":"info","message":"Calling tool...","data":{"tool":"execute_query"}}
+INFO: Calling tool...
+📨 Sent initialized notification
+📨 Sent initialized notification
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'execute_query', 'params': {'database_id': 7, 'query': "SELECT id, spool_id FROM application WHERE request_id = '2c831ee8-80f3-42ff-94ba-dc0b41aad205' ORDER BY created_at DESC LIMIT 1"}}
+MCPROUTER: Execued tool with command: {"tool_name": "execute_query", "params": {"database_id": 7, "query": "SELECT id, spool_id FROM application WHERE request_id = '2c831ee8-80f3-42ff-94ba-dc0b41aad205' ORDER BY created_at DESC LIMIT 1"}} 
+and result
+[]
+
+
+INFO:     127.0.0.1:61894 - "POST /invoke HTTP/1.1" 200 OK
+{"timestamp":"2025-09-13T18:58:46.733Z","level":"info","message":"Calling tool...","data":{"tool":"execute_query"}}
+INFO: Calling tool...
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'execute_query', 'params': {'database_id': 7, 'query': "SELECT * FROM application WHERE id = '2c831ee8-80f3-42ff-94ba-dc0b41aad205'"}}
+MCPROUTER: Execued tool with command: {"tool_name": "execute_query", "params": {"database_id": 7, "query": "SELECT * FROM application WHERE id = '2c831ee8-80f3-42ff-94ba-dc0b41aad205'"}} 
+and result
+[{"id": "2c831ee8-80f3-42ff-94ba-dc0b41aad205", "spool_id": "59dc2abf-7dcc-45d9-81de-29f8b17e5942", "status": "PROVISIONING_PENDING", "ifi_id": 1000001, "created_at": "2025-09-12T14:34:58.734Z", "updated_at": "2025-09-12T14:35:11.59Z", "request_id": "478925704059386"}]
+
+
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'get_knowledge', 'params': {'name': 'adobe_flow_info_and_debugging.md'}}
+MCPROUTER: Execued tool with command: {"tool_name": "get_knowledge", "params": {"name": "adobe_flow_info_and_debugging.md"}} 
+and result
+{"text": "# Adobe Onboarding Flow\n\n\n## SCOPE\n#### Covers only: \nturbo-sourcing + turbo-provisioning driven Adobe applications (spool_id = 59dc2abf-7dcc-45d9-81de-29f8b17e5942).\n#### Exclude: \nPayzapp flow (see separate file), post-dispatch card lifecycle issues, rewards, repayments.\n\n\n## DOMAIN OVERVIEW\n\n### STAGES of Cosmos Application\n1. DATA_CAPTURE\n   - External system(Perseus here) invokes \"turbo-sourcing\" service's POST /spools/{spoolId}/applications endpoint to create applications.\n   - This endpoint accepts the details, populate campaign details if any and creates cosmos applications.\n   - Based on \"submit\" boolean flag received in create application API, turbo-sourcing then marks DATA_CAPTURE stage as completed by invoking Cosmos's API.\n2. PROVISIONING\n   - As soon as DATA_CAPTURE stage is marked as COMPLETED, Cosmos Application then moves into PROVISIONING INITIATED stage.\n   - Every change in Cosmos application publish an Kafka event in APPLICATION_V1 topic.\n   - \"turbo-provisioning\" service then listens to these events. Turbo Provisioing Service's endpoint POST /spools/{spoolId}/applications/{applicationId}/provisions will be invoked.\n   - This service endpoint then resolves the workflow based on product code such as Pixel Play, Pixel Go, Times, etc. This workflow is series of operations required to perform an Credit Card issuance for an user.\n\n\n### Provisioning Worflow\n\n#### Primary Sevices Involved in Provisioning Workflow\n- **turbo-provisioning:** Orchestrates provisioning workflow\n- **Mars:** Maintain's account holder data. It also provides APIs to /createAccountHolder, /updateAccountHolder, /updateEffectiveKYCStatus, /addTags and /addBeneficiary\n- **Aether:** Aether services orchestrates the bundle issuance. Bundle is combined entity of credit account, cashback account, cards, ledgers, etc\n  Aether provides APIs to /issueBundle, /getIssuedBundleDetails, /issueCard and /getBundleDefinition.\n- **Cerberus:** This service takes cares of creating auth profiles, getting auth profiles, etc. Auth profile is a user identity in authN/authZ domain\n- **Cosmos:** Maintains application data and lifecycle end-to-end\n- **Mercury**: Mercury service manages any communication with end user such as email, SMS, push notification, etc. It provides APIs to trigger an communication.\n- **Plutus/Payzapp Onboarding**: This services handles user onboarding on Payzapp app. This service also maintains the user verified emails, etc.\n- **Ruby:** Ruby maintains user's credit account. Aether uses Ruby's APIs to create an account when issuing a bundle. It provides APIs such as getAccount, closeAccounts, getCardsPerAccount, etc.\n- **turbo-account-management-service(TAMS):** This servies manages post onboarding lifecycles such as passbook, card hotlisting, card reissuance, setting PINs, dispatching cards.\n- **turbo-onboarding-service(TOS):** Post Payzapp onboarding, TOS takes cares of onboarding user to Pixel. This service handles user onboarding, performing verifications such as Aadhaar, Pan, integration with HDFC Bank's APS system primarily taking card of credit decisioning at bank. \n\n\n#### Provisioing Flow\nThe provisioning workflow consists of series of items. Below is the order in sequence.\n1. ValidatorWorkFlow: The component is responsible for validating a user's provisioning request in a workflow. It mainly performs two checks:\n   1. **Deduplication Check:** It checks if the user's details (like phone, PAN, Aadhaar) are already present in the system using the AccountHolderDedupeService. If a duplicate is found, it raises a business exception.\n   2. **Existing Account Check:** It checks if the user already has any active Pixel accounts by: Fetching the user's identity from the Mars service. Using the identity to get account details from the Ruby service. Filtering out closed or non-Pixel accounts. If any active account (other than the current application) is found, it throws an exception to prevent duplicate account creation.\n   Below are the associated details found in Cosmos provisioning stage details.\n   ```json\n      \"dedupeResult\": {\n            \"reason\": \"\",\n            \"result\": [],\n            \"status\": \"SUCCESS\"\n      },\n      \"existingAccounts\": [] // non empty array means there is an existing account. This may lead to provisioning failed stage\n   ```\n2. **AddAuthProfileWorkflowV2:** \n   1. It checks if an authentication profile already exists for the user's phone number.\n   2. If it exists, it uses the existing profile's ID.\n   3. If not, it creates a new authentication profile using the Cerberus service, associating the phone number and some metadata.\n   4. Once the profile is found or created, it updates the workflow state to mark this step as completed.\n   5. All operations are asynchronous.\n   6. If it cannot find or create a valid profile, it throws a business exception.\n   Below are the associated details found in Cosmos provisioning stage details \n   ```json\n      \"authProfile\": {\n            \"status\": \"COMPLETED\",\n            \"authProfileId\": \"O6urV_920h4uGVHOwEVlCw==\"\n      }\n   ```\n3. **AddDefaultConfigWorkflow:** \n   1. It checks if the default theme and card network need to be set for a product.\n   2. If they are not already set, it retrieves the default values from ProductConfig.\n   3. It then uses the CosmosClient to add or update the relevant sections (theme or card network) in the application's configuration in the database.\n   4. The workflow is considered complete when both the theme and card network are configured, or if the product does not require defaults for them.\n   To see these details, refer cosmos application \"theme\" and \"cardNetwork\" section.\n4. **SetupAccountHolderWorkflow:**\n   1. It checks if an account holder already exists for the given phone number.\n   2. If the account holder exists, it updates their KYC status, tags, and details.\n   3. If not, it creates a new account holder.\n   4. It adds or updates the account holder\u2019s email vector, possibly verifying it if linked to Payzapp.\n   5. It adds any beneficiaries specified in the request.\n   6. The workflow is marked complete when the account holder is set up and marked as completed in the provisioning details.\n   Below are the associated details found in Cosmos provisioning stage details \n   ```json\n      \"accountHolder\": {\n            \"id\": \"c980edcf-7a21-4dcc-a844-bd46747ac4a6\",\n            \"status\": \"COMPLETED\",\n            \"authProfileId\": \"O6urV_920h4uGVHOwEVlCw==\"\n      }\n   ```\n5. **IssueBundleWorkflow:**\n   1. It checks if the account holder is set up before proceeding.\n   2. It fetches the account holder using their phone number.\n   3. It builds a request with all necessary details (limits, preferences, tags, etc.) to issue the bundle.\n   4. It calls an external service to actually issue the bundle.\n   5. Once the bundle is issued, it updates the provisioning details with the issued accounts and bundle information.\n   6. The workflow is marked complete when the bundle is successfully issued.\n   Below are the associated details found in Cosmos provisioning stage details \n   ```json\n      \"bundle\": {\n            \"status\": \"COMPLETED\",\n            \"accounts\": [\n                {\n                    \"id\": \"98a88efa-00a4-4e69-bce8-428dfb403fbf\"\n                }\n            ],\n            \"bundleId\": \"f339f128-2260-4e99-a1be-5519be2c4006\",\n            \"issuanceId\": \"c6aad082-b38e-4809-8ca9-af0c2c461abf\"\n      }\n   ```\n6. **IssueCardWorkflow:**\n   1. It checks if the card issuance step is already completed.\n   2. It ensures that the required bundle (accounts/products) has been issued before proceeding.\n   3. It verifies that the associated account is not closed.\n   4. If then fetches the selected card along with isPhysical flag from Cosmos \"cardNetwork\" section. If networkSection is empty in Cosmos \"cardNetwork\" section, it then breaks the workflow with PENDING as stage status, \"EXTERNAL_DEPENDENCY\" as reasonCode indication user input(seleting network choices here) to resume the workflow.\n   5. For each selected card type (form factor), it builds a request and calls an external service to issue the card.\n   6. Once cards are issued, it updates the provisioning details with the card issuance information.\n   7. It handles errors such as missing network selection or closed accounts.\n   Below are the associated details found in Cosmos provisioning stage details \n   ```json\n      \"cardIssuance\": {\n         \"cards\": [\n            {\n                  \"cardId\": \"421b054e-110f-4d7d-aedf-e87d99a7fe6c\",\n                  \"status\": \"COMPLETED\",\n                  \"identifier\": \"VISA\",\n                  \"isCardEnabled\": true,\n                  \"cardFFProductId\": \"34cfc1fe-12d2-49ca-bd73-90fa9beb3629\"\n            },\n            {\n                  \"cardId\": \"68a7cac0-f92d-429b-b93a-1655748c6c36\",\n                  \"status\": \"COMPLETED\",\n                  \"identifier\": \"RUPAY\",\n                  \"isCardEnabled\": true,\n                  \"cardFFProductId\": \"168f664d-ee6f-4943-8824-408c377b7ba6\"\n            }\n         ],\n         \"status\": \"COMPLETED\"\n      },\n   ```\n7. **CardStatusValidatorWorkflow:**\n   1. It runs after cards have been issued.\n   2. It fetches the latest card status details from an external service.\n   3. It updates each card\u2019s enabled status in the provisioning details.\n   4. If any card is not active, it throws an error to indicate the workflow cannot proceed.\n   5. The workflow step is considered complete only when all cards are active.\n   Refer \"isCardEnabled\" flag in Cosmos provisioning stage details \"cardIssuance\" object\n8. **SelectThemeWorkflow:** \n   1. It checks if a theme has already been selected and marked as completed.\n   2. It allows theme selection at any time (no dependencies on previous steps).\n   3. When executed, it verifies that a theme ID is present on Cosmos application, \"theme\" section. If theme not found in theme section, the workflow breaks with error \"EXTERNAL_DEPENDENCY\" as reasonCode. Indication, user input(selecting theme) is required to resume the workflow.\n   4. It fetches the current theme for the user from TOS service; if the theme is not set or does not match the requested one, it saves the new theme using the TOSClient.\n   5. After saving (or if already set), it updates the provisioning details with the selected theme.\n   ```json\n      \"theme\": {\n         \"id\": \"PXLIE\",\n         \"status\": \"COMPLETED\"\n      }\n   ```\n9.  **DispatchCardWorkflow:**\n   1.  It checks if card dispatch is already completed.\n   2.  It ensures that cards have been issued and a theme has been selected before dispatching.\n   3.  It fetches the theme details needed for the card\u2019s appearance.\n   4.  It builds a dispatch request with user, card, address, and theme information.\n   5.  It calls an external service to initiate the card dispatch.\n   6.  Once the card is dispatched, it updates the provisioning details to mark this step as complete.\n   7.  It handles errors such as missing theme or no cards to dispatch.\n   Below are the associated details found in Cosmos provisioning stage details\n   ```json\n      \"cardDispatch\": {\n         \"status\": \"COMPLETED\"\n      },\n   ```\n10. **GenerateApplicationPdfWorkflowV2:**\n    1.  It checks if the PDF generation step is already completed.\n    2.  It validates that the user's email address is present in the request.\n    3.  It builds a request to generate the application PDF with default values.\n    4.  It sends an email notification with the generated PDF attached using the Mercury client.\n    5.  Once the email is sent, it updates the provisioning details to mark the PDF generation as complete.\n    6.  If the email is missing, it throws an error and logs it.\n    ```json\n      \"applicationPDF\": {\n         \"status\": \"COMPLETED\"\n      },\n    ```\n\n\n### Debugging Adobe Worflow\n1. First resolves the user ttributes provided in input to an application_id\n2. Fetch the required applcation section, stage data.\n3. Analyze reasonCode, reasonDescription, stage validate results from cosmos stage table details column to figure out any issue.\n4. Fetch the logs.  If you need detailed assistance with querying logs, requets for additional knowledge such as \"debugging_with_log_detailed.md\".\n5. Analyze the stacktraces and other logs to come to an conclusion.\n6. Use may use timestamps from Cosmos stage updated_at, created_at to query logs with time range.\n\n### when to stop\nStop or ask for human intervention if all the application stage, section details, logs looks fine and no error recorded.\n"}
+
+{"timestamp":"2025-09-13T18:59:08.591Z","level":"info","message":"Calling tool...","data":{"tool":"execute_query"}}
+INFO: Calling tool...
+{"timestamp":"2025-09-13T18:59:20.193Z","level":"info","message":"Calling tool...","data":{"tool":"execute_query"}}
+INFO: Calling tool...
+{"timestamp":"2025-09-13T18:59:32.272Z","level":"info","message":"Calling tool...","data":{"tool":"execute_query"}}
+INFO: Calling tool...
+
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'execute_query', 'params': {'database_id': 7, 'query': "SELECT * FROM application_stage WHERE application_id = '2c831ee8-80f3-42ff-94ba-dc0b41aad205' AND name = 'PROVISIONING'"}}
+MCPROUTER: Execued tool with command: {"tool_name": "execute_query", "params": {"database_id": 7, "query": "SELECT * FROM application_stage WHERE application_id = '2c831ee8-80f3-42ff-94ba-dc0b41aad205' AND name = 'PROVISIONING'"}} 
+and result
+[]
+
+
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'execute_query', 'params': {'database_id': 7, 'query': "SELECT * FROM application_stage WHERE application_id = '2c831ee8-80f3-42ff-94ba-dc0b41aad205' AND name = 'DATA_CAPTURE'"}}
+MCPROUTER: Execued tool with command: {"tool_name": "execute_query", "params": {"database_id": 7, "query": "SELECT * FROM application_stage WHERE application_id = '2c831ee8-80f3-42ff-94ba-dc0b41aad205' AND name = 'DATA_CAPTURE'"}} 
+and result
+[]
+
+
+
+
+MCPROUTER: Executing tool with command: {'tool_name': 'execute_query', 'params': {'database_id': 7, 'query': "SELECT * FROM application_stage WHERE application_id = '2c831ee8-80f3-42ff-94ba-dc0b41aad205'"}}
+MCPROUTER: Execued tool with command: {"tool_name": "execute_query", "params": {"database_id": 7, "query": "SELECT * FROM application_stage WHERE application_id = '2c831ee8-80f3-42ff-94ba-dc0b41aad205'"}} 
+and result
+[]
+
+
+INFO:     127.0.0.1:62026 - "POST /invoke HTTP/1.1" 200 OK
+INFO:     Shutting down
+{"timestamp":"2025-09-13T19:05:50.378Z","level":"info","message":"Shutting down server..."}
+INFO: Shutting down server...
+time="2025-09-13T19:05:50Z" level=info msg="shutting down server..."
+time="2025-09-13T19:05:50Z" level=info msg="stdioserverError reading input: context canceled"
+time="2025-09-13T19:05:50Z" level=info msg="shutting down server..."
+{"timestamp":"2025-09-13T19:05:50.399Z","level":"info","message":"Shutting down server..."}
+INFO: Shutting down server...
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [62241]
+INFO:     Stopping reloader process [61993]
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutting down...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutdown complete.
+INFO - mcp-atlassian.utils.lifecycle - Server stopped, flushing output streams...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutting down...
+INFO - mcp-atlassian.server.main - Main Atlassian MCP server lifespan shutdown complete.
+INFO - mcp-atlassian.utils.lifecycle - Server stopped, flushing output streams...

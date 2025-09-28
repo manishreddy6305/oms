@@ -1,0 +1,265 @@
+# Domain: Cosmos: Cosmos acts like a datastore to store a user data collected across multiple frontend screens.
+
+db name = cosmos_local
+database_id = 7
+
+## 1. Tables Overview
+- application
+- application_stage
+- application_section
+
+Primary relationships:
+- application.id = application_stage.application_id (1:M)
+- application.id = application_section.application_id (1:M)
+
+All timestamps are ISO-8601 UTC (Z). All UUIDs are canonical lowercase UUID strings unless otherwise noted.
+
+---
+
+## 2. Table: application
+Purpose: Stores the high-level lifecycle state of an onboarding application.
+
+Fields:
+- id (UUID, PK)
+- spool_id (UUID) : spool id is a type of application or group of same type applications
+- status (STRING ENUM)
+  - Possible: CREATED, DATA_CAPTURE_INITIATED, DATA_CAPTURE, PROVISIONING_INITIATED, PROVISIONING_FAILED, COMPLETED, REJECTED. FAILED
+- ifi_id : Financial institution identifier / tenant.
+- created_at (TIMESTAMP)
+- updated_at (TIMESTAMP)
+
+Status semantics (inferred):
+- DATA_CAPTURE completion is reflected in stages.
+- Final failure indicated by PROVISIONING_FAILED when PROVISIONING stage fails.
+- Success path would end at e.g. COMPLETED.
+
+Example row:
+{
+  "id": "9f49e5c9-6484-4397-a3a9-bb14242bfca8",
+  "spool_id": "59dc2abf-7dcc-45d9-81de-29f8b17e5942",
+  "status": "PROVISIONING_FAILED",
+  "ifi_id": 1000001,
+  "created_at": "2025-09-03T08:14:08.705Z",
+  "updated_at": "2025-09-09T15:10:30.417Z",
+  "request_id": "194599731315697"
+}
+
+---
+
+## 3. Table: application_stage
+Purpose: Captures discrete processing stages and their outcomes.
+
+Fields:
+- id (UUID, PK)
+- application_id (UUID, FK -> application.id)
+- name (STRING ENUM)
+  - DATA_CAPTURE, PROVISIONING
+- status (STRING ENUM)
+  - COMPLETED, FAILED, INITIATED, NOT_INITIATED
+- result (JSONB) : Outcome metadata for the stage (validation, decision).
+- details (JSONB) : Extended contextual data (sub-process statuses, error causes).
+- created_at (TIMESTAMP)
+- updated_at (TIMESTAMP)
+- ifi_id (INT)
+- reason_code: If not blank, the is the reason code behind any failures. 
+- reason_description: If not blank, the is the a description about the failure 
+
+Observed result JSON shape (DATA_CAPTURE, PROVISIONING):
+{
+  "validationPassed": {
+    "validation": "successful"
+  }
+}
+
+PROVSIONING Stage details contains detals of sub processes such as 
+accountHolder, authProfile, bundle, cardIssuance, theme, dispatch, dedupe, exisitngAccounts 
+
+
+## 4. Table: application_section
+Purpose: Stores user-entered or system-generated sections of the application form / verification artifacts.
+
+Fields:
+- id (UUID, PK)
+- application_id (UUID, FK -> application.id)
+- name (STRING ENUM) : Section identifier (see catalog below).
+- details (JSONB) : Section payload.
+- created_at (TIMESTAMP)
+- updated_at (TIMESTAMP)
+- ifi_id (INT)
+
+---
+
+## 5. Section Catalog & JSON Schemas (Observed + Inferred)
+
+
+### 5.1 contactDetails (type: input)
+details:
+{
+  "emailId": string,
+  "phoneNumber": string  // with country code followed by 10 digit number. e.g. +918989898989
+}
+
+### 5.2 shipping (type: input)
+{
+  "preferredDeliveryTime1": string,  // placeholder, maybe HHmmss or code
+  "preferredDeliveryTime2": string
+}
+
+### 5.3 personalDetails (type: input)
+{
+  "dob": datetime | date,
+  "title": string,          // e.g. Mr., Ms., Dr.
+  "gender": enum[MALE,FEMALE,OTHER?],
+  "lastName": string,
+  "firstName": string,
+  "middleName": string?,
+  "nationality": string,    // e.g. INDIAN
+  "maritalStatus": string,  // e.g. Married, Single
+  "indianResident": enum[Y,N],
+  "noOfDependents": integer
+}
+
+### 5.4 familyDetails (type: input)
+{
+  "mother": {
+    "maidenName": string
+  },
+  "spouse": {
+    "name": string,
+    "companyName": string?,
+    "officeTelephoneNo": string?
+  }
+}
+
+### 5.5 existingCustomerDetails (type: input)
+{
+  "grade": string,       // Risk/relationship grade
+  "customerId": string
+}
+
+### 5.6 employmentDetails (type: input)
+{
+  "companyCode": string,
+  "designation": string,
+  "employerName": string,
+  "officeEmailId": string,
+  "occupationType": string,          // e.g. Salaried, Self-Employed
+  "currentPosition": enum[Y,N],
+  "officeExtensionNo": string?,
+  "officeTelephoneNo": string?
+}
+
+### 5.7 card (type: input)
+{
+  "nameOnCard": string
+}
+
+### 5.8 communicationAddress (type: input)
+{
+  "city": string,
+  "state": string,
+  "pincode": string,
+  "landmark": string?,
+  "addressLine1": string,
+  "addressLine2": string?,
+  "addressLine3": string?,
+  "addressLine4": string?
+}
+
+### 5.9 theme (type: input)
+{
+  "themeId": string,
+  "metadata": {
+    "selectedBy": string?,
+    "defaultConfigId": UUID
+  }
+}
+
+### 5.10 aadhaar (type: verification)
+{
+  "aadhaarReferenceNumber": string   // tokenized / reference, not raw Aadhaar
+}
+
+### 5.11 permanentAddress (type: input)
+{
+  "city": string,
+  "pincode": string,
+  "telephone": string?,
+  "addressLine1": string,
+  "addressLine2": string?,
+  "addressLine3": string?
+}
+
+### 5.12 bankRelationship (type: input)
+{
+  "salesReferenceNumber": string?
+}
+
+### 5.13 cardNetwork (type: input)
+{
+  "networkSelections": array<string> // e.g. ["VISA","MASTERCARD"]
+}
+
+### 5.14 pan (type: verification)
+{
+  "pan": string  // Masking advisable externally
+}
+
+### 5.15 applicationDecision (type: system)
+{
+  "offerCode": string,
+  "creditLimit": number,
+  "decisionTime": string  // placeholder; maybe HHmmss or epoch token
+}
+
+### 5.16 employmentAddress (type: input)
+{
+  "fax": string?,
+  "city": string,
+  "pincode": string,
+  "landmark": string?,
+  "telephone": string?,
+  "addressLine1": string,
+  "addressLine2": string?,
+  "addressLine3": string?
+}
+
+### 5.17 education (type: input)
+{
+  "education": 
+}
+
+### 5.18 attributes (type: input)
+{
+  "regionCode": string,
+  "userJourneyVersion": string,
+  "externalApplicationDate": date
+}
+
+---
+
+## 6. Error & Failure Semantics
+Stage failure (PROVISIONING):
+- details.reason.code categorizes failure.
+
+
+
+## 7. High-Level Lifecycle (Observed Flow)
+1. DATA_CAPTURE COMPLETED
+2. PROVISIONING FAILED
+=> application.status = PROVISIONING_FAILED
+
+Success path (expected):
+DATA_CAPTURE_INITIATED -> DATA_CAPTURE_COMPLETED -> PROVISIONING_INITIATED -> COMPLETED
+
+---
+
+
+
+
+Query guidelines
+1. Do not include db name in queries. Choose correct database_id and directly query table. 
+e.g. cosmos_local.application is wrong. Do application instead.
+End of schema.
+2. Postgres is powering the metabase hence use postgresql.
+3. The examples provided are just for reference. Do not query the DB searching for predefined errors. Instead strictly follow generic approach
